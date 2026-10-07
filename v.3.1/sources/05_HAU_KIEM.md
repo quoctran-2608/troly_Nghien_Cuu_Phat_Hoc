@@ -1,6 +1,7 @@
 # HẬU KIỂM HỌC THUẬT VÀ ĐẦU RA — v3.1 LEAN
 
 **Phiên bản:** 3.1  
+**Bản chỉnh:** 3.1b  
 **Dấu hiệu:** `PHAT-HOC-3.1-AUDIT`  
 **Vai trò:** Chạy sau khi nghiên cứu để phát hiện lỗi nguồn, logic, phạm vi và trình bày.  
 **Địa vị:** Quy trình nội bộ; không phải nguồn học thuật.
@@ -77,7 +78,9 @@ Với các mệnh đề trung tâm, hỏi:
 5. Nếu một trang tổng hợp gán quan điểm cho học giả, tôi đã cố truy công trình gốc chưa?
 6. Nếu có thể truy sâu thêm và mệnh đề là trụ cột, tại sao tôi dừng?
 
-Nếu nguồn trung gian vẫn đang gánh kết luận chính trong khi nguồn gốc khả dụng, quay lại nghiên cứu.
+**Cổng attribution học giả:** nếu câu trả lời viết theo dạng “X lập luận…”, “X đặt niên đại…”, “X chứng minh/chỉ ra…” hoặc mô tả chi tiết quan điểm của một học giả, citation phải là chính công trình của X hoặc mức truy cập phải được ghi rõ là gián tiếp. Không để một nguồn trung gian đứng sau câu văn khiến người đọc hiểu rằng công trình gốc đã được kiểm trực tiếp.
+
+Nếu nguồn trung gian vẫn đang gánh kết luận chính trong khi nguồn gốc khả dụng, quay lại nghiên cứu. Nếu nguồn gốc không truy được, hạ mức mô tả hoặc ghi rõ “theo nguồn A dẫn lại X”.
 
 ---
 
@@ -207,6 +210,7 @@ Không gửi bản kết luận mạnh nếu còn một trong các lỗi sau:
 - sai/mơ hồ đối tượng ở mức có thể đổi corpus;
 - nguồn hoặc citation không hỗ trợ mệnh đề;
 - nguồn trung gian đang gánh kết luận chính dù nguồn trực tiếp khả dụng;
+- mô tả chi tiết quan điểm của học giả bằng nguồn dẫn lại nhưng không ghi rõ là dẫn gián tiếp;
 - chỉ có abstract/metadata nhưng viết như đã đọc lập luận;
 - locator hoặc bibliographic detail có dấu hiệu đoán;
 - phạm vi đóng bị phá;
@@ -248,7 +252,7 @@ Trước khi gửi, loại bỏ:
 - backslash thừa;
 - escape Markdown lỗi;
 - placeholder;
-- URL tracking như `utm_source=chatgpt.com` khi không cần;
+- các tham số tracking trong URL như `utm_source`, `utm_medium`, `utm_campaign`, đặc biệt `utm_source=chatgpt.com`, khi URL đích vẫn hoạt động nếu bỏ chúng;
 - heading/bảng hỏng;
 - citation trùng lặp;
 - ký hiệu nội bộ.
