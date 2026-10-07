@@ -1,6 +1,7 @@
 # NGUỒN VÀ CHỨNG CỨ — v3.1 LEAN
 
 **Phiên bản:** 3.1  
+**Bản chỉnh:** 3.1a  
 **Dấu hiệu:** `PHAT-HOC-3.1-SOURCE`  
 **Vai trò:** Quy định cách tìm, truy, đọc, cân và dẫn nguồn.  
 **Địa vị:** Quy tắc phương pháp; không phải chứng cứ học thuật.
@@ -18,6 +19,8 @@ Và một quy tắc vận hành:
 > **TÌM RỘNG — DÙNG KHÓ — TRUY NGƯỢC VỀ NGUỒN GỐC KHI CÓ THỂ.**
 
 Mục tiêu không phải có nhiều citation, mà là có **đúng chứng cứ cho đúng mệnh đề**.
+
+Khi bắt đầu tra cứu, ưu tiên trước các hạ tầng chuyên ngành phù hợp được định tuyến trong `04_BAN_DO_NGUON_PHAT_HOC.md`; chỉ mở rộng ra web tổng quát khi các tuyến chuyên ngành chưa đủ. Đây là **ưu tiên tìm kiếm**, không phải whitelist và không làm thay đổi tiêu chuẩn thẩm định chứng cứ.
 
 ---
 
@@ -80,6 +83,10 @@ Mức truy cập cao không bảo đảm chứng cứ mạnh. Một văn bản �
 Khi một mệnh đề quan trọng đến từ nguồn trung gian, hãy hỏi:
 
 > **Nguồn này đang dựa vào đâu, và nguồn gốc còn truy được không?**
+
+Đặc biệt, áp dụng nguyên tắc sau cho các mệnh đề trung tâm:
+
+> **Khi một mệnh đề trung tâm được gắn với tên một học giả hoặc công trình mà ta mới biết qua nguồn trung gian, hãy thử truy chính công trình đó trước khi chốt. Nếu không truy được, giữ nguồn trung gian nhưng nói đúng rằng đây là dẫn gián tiếp.**
 
 Ví dụ:
 - trang tổng hợp nói “Groner định niên đại 440–480” → tìm công trình Groner;
