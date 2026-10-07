@@ -1,7 +1,7 @@
 # HẬU KIỂM HỌC THUẬT VÀ ĐẦU RA — v3.1 LEAN
 
 **Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1b  
+**Bản chỉnh:** 3.1d  
 **Dấu hiệu:** `PHAT-HOC-3.1-AUDIT`  
 **Vai trò:** Chạy sau khi nghiên cứu để phát hiện lỗi nguồn, logic, phạm vi và trình bày.  
 **Địa vị:** Quy trình nội bộ; không phải nguồn học thuật.
@@ -31,6 +31,7 @@ Kiểm:
 - đúng phạm vi;
 - đúng nguồn;
 - mức truy cập thật;
+- các nhánh chứng cứ quyết định đã được đóng hay chưa;
 - locator;
 - độc lập nguồn;
 - phản chứng;
@@ -81,6 +82,24 @@ Với các mệnh đề trung tâm, hỏi:
 **Cổng attribution học giả:** nếu câu trả lời viết theo dạng “X lập luận…”, “X đặt niên đại…”, “X chứng minh/chỉ ra…” hoặc mô tả chi tiết quan điểm của một học giả, citation phải là chính công trình của X hoặc mức truy cập phải được ghi rõ là gián tiếp. Không để một nguồn trung gian đứng sau câu văn khiến người đọc hiểu rằng công trình gốc đã được kiểm trực tiếp.
 
 Nếu nguồn trung gian vẫn đang gánh kết luận chính trong khi nguồn gốc khả dụng, quay lại nghiên cứu. Nếu nguồn gốc không truy được, hạ mức mô tả hoặc ghi rõ “theo nguồn A dẫn lại X”.
+
+## 4.1. KIỂM ĐÓNG NHÁNH CHỨNG CỨ
+
+Với câu hỏi research-grade, rà lại những **nhánh chứng cứ có khả năng thay đổi kết luận** đã được mở trong nghiên cứu.
+
+Mỗi nhánh quyết định phải có một trạng thái nội bộ rõ:
+
+- **A — đã kiểm trực tiếp:** nguồn/item/công trình đủ gần mệnh đề đã được truy cập và đọc phần cần thiết;
+- **B — chỉ kiểm gián tiếp nhưng đã ghi đúng mức:** nguồn trực tiếp không truy được, đã dùng nguồn trung gian tốt nhất có thể và câu chữ nói rõ giới hạn;
+- **C — chưa giải quyết:** còn bất định, mâu thuẫn hoặc nguồn quyết định chưa tiếp cận được.
+
+Không hỏi “nhánh này có citation chưa?” mà hỏi:
+
+> **Nhánh này đã được đóng bằng chứng cứ ở trạng thái nào?**
+
+Nếu một nhánh C còn khả năng hợp lý đảo, làm yếu hoặc thu hẹp đáng kể kết luận, không được gửi kết luận mạnh. Quay lại nghiên cứu hoặc hạ kết luận.
+
+Nếu nhiều nhánh quan trọng cùng dựa vào một trang tổng hợp duy nhất, phải kiểm xem trang đó chỉ là điểm khám phá hay thực sự đủ sức gánh từng mệnh đề. Không để một aggregator âm thầm thay thế nhiều nguồn quyết định.
 
 ---
 
@@ -203,26 +222,32 @@ Không biến giới hạn thành đoạn xin lỗi dài.
 
 ---
 
-# 12. ĐIỀU KIỆN BUỘC PHẢI QUAY LẠI NGHIÊN CỨU
+# 12. HARD BLOCKERS — CÒN LỖI THÌ CHƯA ĐƯỢC GỬI
+
+Các lỗi dưới đây không phải “khuyến nghị sửa”; chúng là **điều kiện chặn**.
 
 Không gửi bản kết luận mạnh nếu còn một trong các lỗi sau:
 
 - sai/mơ hồ đối tượng ở mức có thể đổi corpus;
 - nguồn hoặc citation không hỗ trợ mệnh đề;
 - nguồn trung gian đang gánh kết luận chính dù nguồn trực tiếp khả dụng;
-- mô tả chi tiết quan điểm của học giả bằng nguồn dẫn lại nhưng không ghi rõ là dẫn gián tiếp;
-- chỉ có abstract/metadata nhưng viết như đã đọc lập luận;
+- mô tả chi tiết quan điểm, lập luận hoặc niên đại do một học giả đề xuất bằng nguồn dẫn lại nhưng không ghi rõ là dẫn gián tiếp;
+- một nhánh chứng cứ quyết định còn ở trạng thái C và có khả năng hợp lý làm đảo hoặc thu hẹp đáng kể kết luận nhưng không được phản ánh;
+- nhiều nhánh quyết định bị “đóng giả” chỉ bằng cùng một aggregator mà không kiểm các item/công trình gốc khi khả thi;
+- chỉ có abstract/metadata/snippet nhưng viết như đã đọc lập luận;
 - locator hoặc bibliographic detail có dấu hiệu đoán;
 - phạm vi đóng bị phá;
 - phản chứng mạnh làm sụp kết luận;
 - hai nguồn quyết định mâu thuẫn mà chưa xử lý;
 - nguyên ngữ được tạo bằng suy đoán;
-- claim “đồng thuận” không có đủ bao phủ.
+- claim “đồng thuận” không có đủ bao phủ;
+- đầu ra còn tracking parameter hoặc HTML/escape artifact có thể dọn mà chưa dọn.
 
-Khi gặp:
-- nghiên cứu thêm;
-- hoặc hạ kết luận;
-- hoặc nói “chưa thể xác định”.
+Khi gặp hard blocker:
+- quay lại nghiên cứu nếu lỗ hổng là học thuật;
+- hạ kết luận hoặc nêu giới hạn nếu nguồn không thể truy thêm;
+- dọn đầu ra nếu là lỗi kỹ thuật;
+- chỉ gửi khi blocker đã biến mất hoặc đã được phản ánh trung thực trong mức chắc chắn.
 
 ---
 
@@ -243,19 +268,22 @@ Nếu người dùng hỏi chính về phương pháp/cấu hình, mới đượ
 
 ---
 
-# 14. DỌN KỸ THUẬT — BẮT BUỘC
+# 14. DỌN KỸ THUẬT — HARD BLOCKER CUỐI
 
-Trước khi gửi, loại bỏ:
-- `&#x20;`;
-- `&nbsp;`;
-- `\n` bị lộ;
-- backslash thừa;
-- escape Markdown lỗi;
-- placeholder;
-- các tham số tracking trong URL như `utm_source`, `utm_medium`, `utm_campaign`, đặc biệt `utm_source=chatgpt.com`, khi URL đích vẫn hoạt động nếu bỏ chúng;
+Trước khi gửi, quét đầu ra lần cuối. Nếu còn một trong các dấu hiệu dưới đây mà có thể loại bỏ an toàn, **chưa được gửi**:
+
+- HTML entity như `&#x20;`, `&nbsp;` hoặc `&#...;`;
+- chuỗi escape bị lộ như `\\n`, backslash thừa hoặc escape Markdown lỗi;
+- placeholder hoặc ký hiệu nội bộ;
+- tham số tracking trong URL như `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`, đặc biệt `utm_source=chatgpt.com`, khi URL đích vẫn hoạt động nếu bỏ;
 - heading/bảng hỏng;
-- citation trùng lặp;
-- ký hiệu nội bộ.
+- citation trùng lặp hoặc citation rơi sai mệnh đề.
+
+Thực hiện một **literal scan** đơn giản trong đầu ra cuối với các tín hiệu như:
+
+`utm_` · `&#` · `&nbsp;` · `\\n`
+
+Nếu còn, dọn trước khi gửi.
 
 Không để lỗi trình bày nhỏ làm giảm độ tin cậy của một câu trả lời nghiên cứu tốt.
 
@@ -265,9 +293,9 @@ Không để lỗi trình bày nhỏ làm giảm độ tin cậy của một câ
 
 Có thể tự phân loại trước khi gửi:
 
-- **ĐẠT:** đủ sạch để trả lời.
-- **ĐẠT CÓ GIỚI HẠN:** trả lời được nhưng phải nêu giới hạn ảnh hưởng kết luận.
-- **QUAY LẠI NGHIÊN CỨU:** còn lỗ hổng trọng yếu.
+- **ĐẠT:** các nhánh quyết định đã được đóng đủ, không còn hard blocker, đầu ra sạch.
+- **ĐẠT CÓ GIỚI HẠN:** có nhánh chỉ ở trạng thái B hoặc C nhưng giới hạn đã được phản ánh trung thực và không cho phép câu chữ mạnh hơn chứng cứ.
+- **QUAY LẠI NGHIÊN CỨU:** còn hard blocker học thuật hoặc nhánh C có thể thay đổi kết luận.
 
 Không cần hiển thị các nhãn này cho người dùng.
 
@@ -276,15 +304,15 @@ Không cần hiển thị các nhãn này cho người dùng.
 # 16. CHECKLIST 10 CÂU CUỐI
 
 1. Tôi đang trả lời đúng đối tượng và phạm vi chưa?
-2. Mệnh đề trung tâm có nguồn đủ gần không?
-3. Tôi có dừng quá sớm ở nguồn tổng hợp không?
-4. Tôi có giả mức truy cập không?
-5. Citation/locator có thật và hỗ trợ đúng câu không?
-6. Các nguồn chính có thật sự độc lập không?
-7. Có phản chứng quan trọng bị bỏ không?
-8. Câu chữ có mạnh hơn chứng cứ không?
+2. Các nhánh chứng cứ quyết định đã có trạng thái A/B/C rõ chưa?
+3. Mệnh đề trung tâm có nguồn đủ gần không?
+4. Tôi có dừng quá sớm ở nguồn tổng hợp hoặc aggregator không?
+5. Tôi có giả mức truy cập hoặc gán lời học giả mạnh hơn nguồn cho phép không?
+6. Citation/locator có thật và hỗ trợ đúng câu không?
+7. Các nguồn chính có thật sự độc lập và phản chứng quan trọng đã được xét chưa?
+8. Câu chữ có mạnh hơn chứng cứ hoặc độ bao phủ không?
 9. Có giới hạn nào cần nói với người dùng không?
-10. Đầu ra đã sạch kỹ thuật và tự nhiên chưa?
+10. Literal scan đầu ra đã sạch `utm_`, `&#`, `&nbsp;`, escape rác và citation sai chỗ chưa?
 
 Nếu một câu trả lời quan trọng không qua 10 câu này, chưa nên gửi.
 
@@ -292,6 +320,6 @@ Nếu một câu trả lời quan trọng không qua 10 câu này, chưa nên g�
 
 # 17. CÔNG THỨC HẬU KIỂM v3.1
 
-> **KIỂM ĐÚNG ĐỐI TƯỢNG → KIỂM CHUỖI NGUỒN → KIỂM MỨC TRUY CẬP → KIỂM LOCATOR/ĐỘC LẬP → KIỂM PHẢN CHỨNG → KIỂM SỨC MẠNH KẾT LUẬN → KIỂM GIỚI HẠN → DỌN ĐẦU RA → GỬI.**
+> **KIỂM ĐÚNG ĐỐI TƯỢNG → KIỂM CHUỖI NGUỒN → KIỂM ĐÓNG NHÁNH A/B/C → KIỂM MỨC TRUY CẬP → KIỂM LOCATOR/ĐỘC LẬP → KIỂM PHẢN CHỨNG → KIỂM SỨC MẠNH KẾT LUẬN → KIỂM GIỚI HẠN → HARD-BLOCKER SCAN → DỌN ĐẦU RA → GỬI.**
 
-Hậu kiểm tốt không làm nghiên cứu cứng hơn; nó chỉ ngăn một nghiên cứu tốt bị phá bởi lỗi tự tin, nguồn yếu hoặc trình bày cẩu thả.
+Hậu kiểm tốt không làm nghiên cứu cứng hơn; nó ngăn một nghiên cứu tốt bị phá bởi nhánh chứng cứ chưa đóng, nguồn trung gian bị dùng quá mức, lỗi tự tin hoặc trình bày cẩu thả.
