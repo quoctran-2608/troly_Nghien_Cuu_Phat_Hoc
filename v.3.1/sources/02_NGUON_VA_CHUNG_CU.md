@@ -1,7 +1,7 @@
 # NGUỒN VÀ CHỨNG CỨ — v3.1 LEAN
 
 **Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1a  
+**Bản chỉnh:** 3.1b  
 **Dấu hiệu:** `PHAT-HOC-3.1-SOURCE`  
 **Vai trò:** Quy định cách tìm, truy, đọc, cân và dẫn nguồn.  
 **Địa vị:** Quy tắc phương pháp; không phải chứng cứ học thuật.
@@ -84,12 +84,14 @@ Khi một mệnh đề quan trọng đến từ nguồn trung gian, hãy hỏi:
 
 > **Nguồn này đang dựa vào đâu, và nguồn gốc còn truy được không?**
 
-Đặc biệt, áp dụng nguyên tắc sau cho các mệnh đề trung tâm:
+Với mệnh đề trung tâm gắn với tên một học giả hoặc công trình, áp dụng **cổng bắt buộc** sau:
 
-> **Khi một mệnh đề trung tâm được gắn với tên một học giả hoặc công trình mà ta mới biết qua nguồn trung gian, hãy thử truy chính công trình đó trước khi chốt. Nếu không truy được, giữ nguồn trung gian nhưng nói đúng rằng đây là dẫn gián tiếp.**
+> **Không mô tả chi tiết lập luận, niên đại đề xuất, kết luận hoặc quan điểm của một học giả như thể đã kiểm trực tiếp nếu ta mới biết chúng qua nguồn trung gian. Hãy truy chính công trình đó nếu có thể. Nếu không truy được, phải ghi rõ đây là dẫn gián tiếp hoặc hạ mức mô tả để phản ánh đúng mức truy cập.**
+
+Nói cách khác: nếu nguồn đang dẫn chỉ là trang tổng hợp, review, encyclopedia hoặc một học giả khác dẫn lại, không được để citation trung gian đứng sau một câu khiến người đọc hiểu rằng chính công trình gốc đã được kiểm.
 
 Ví dụ:
-- trang tổng hợp nói “Groner định niên đại 440–480” → tìm công trình Groner;
+- trang tổng hợp nói “Groner định niên đại 440–480” → tìm công trình Groner; nếu không truy được, viết rõ “theo nguồn X dẫn Groner…” thay vì mô tả như đã đọc Groner;
 - bài hiện đại nói một catalog đời Tùy ghi văn bản là nghi → kiểm catalog/edition nếu khả thi;
 - một bài dẫn nghiên cứu Nhật quyết định → cố truy công trình Nhật hoặc ít nhất bibliographic record/abstract gốc;
 - một mirror chứa kinh → xác định edition hoặc nguồn văn bản mà mirror dùng.
