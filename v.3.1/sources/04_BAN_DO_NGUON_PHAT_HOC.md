@@ -1,6 +1,7 @@
 # BẢN ĐỒ NGUỒN PHẬT HỌC — v3.1 LEAN
 
 **Phiên bản:** 3.1  
+**Bản chỉnh:** 3.1a  
 **Dấu hiệu:** `PHAT-HOC-3.1-MAP`  
 **Vai trò:** Bản đồ định tuyến corpus, ngôn ngữ, hạ tầng và tuyến học giới.  
 **Địa vị:** Công cụ tìm đường; không phải nguồn học thuật và không phải whitelist.
@@ -32,7 +33,36 @@ Nếu đề tài nằm ngoài Map, dùng lõi phương pháp để tự dựng p
 
 ---
 
-# 2. ĐỊNH TUYẾN NHANH
+# 2. THỨ TỰ TRA CỨU ƯU TIÊN
+
+Khi câu hỏi cần tra cứu, mặc định đi theo ba tuyến sau, nhưng chỉ dùng những tuyến thật sự phù hợp:
+
+**Tuyến 1 — Hạ tầng corpus/chuyên ngành.** Bắt đầu ở các cơ sở chuyên cho loại văn bản hoặc truyền thống đang nghiên cứu. Đây thường là nơi tốt nhất để xác định đúng văn bản, edition, parallel, catalog hoặc manuscript.
+
+**Tuyến 2 — Hạ tầng học thuật.** Tìm bài báo, sách, chương sách, luận án, bibliographic record và repository học thuật, đặc biệt khi cần lịch sử nghiên cứu, tác quyền, niên đại hoặc tranh luận chuyên ngành.
+
+**Tuyến 3 — Web rộng.** Dùng để khám phá thêm từ khóa, lần bibliography, tìm bản toàn văn hoặc nguồn chưa có trong các hạ tầng trên. Web rộng không tự động là nguồn chứng minh; sau khi phát hiện một nguồn quan trọng, quay về quy tắc truy nguồn trong `02_NGUON_VA_CHUNG_CU.md`.
+
+Các hạ tầng ưu tiên theo chức năng:
+
+| Nhu cầu | Hạ tầng nên thử trước |
+|---|---|
+| Nikāya/Āgama, Pāli, parallel sớm | SuttaCentral, Pali Text Society |
+| Hán tạng và Đại Chính tân tu Đại tạng kinh | CBETA, SAT |
+| Sanskrit/Pāli/Prakrit e-text | GRETIL; DSBC khi phù hợp |
+| Tây Tạng, Kangyur/Tengyur, scan/catalog | BDRC/BUDA; 84000 cho bản dịch và định vị |
+| Gāndhārī/Kharoṣṭhī/Gandhāra | Gandhari.org |
+| Dunhuang/Trung Á | International Dunhuang Programme và catalog chuyên ngành |
+| Nghiên cứu Nhật/Đông Á | INBUDS, CiNii, J-STAGE, DLMBS |
+| Nghiên cứu học thuật rộng | JSTOR, Project MUSE, repository đại học, nhà xuất bản học thuật và cơ sở thư mục chuyên ngành |
+
+Đây là **thứ tự ưu tiên tìm kiếm**, không phải thứ tự uy tín tuyệt đối và không phải danh sách đóng. Một nguồn ngoài danh sách vẫn được dùng nếu phù hợp và qua thẩm định.
+
+**Uy tín của platform không thay thế việc đánh giá item.** CBETA có thể rất tốt để truy văn bản Hán nhưng không tự nó chứng minh một niên đại lịch sử; CiNii có thể giúp tìm bài Nhật nhưng bibliographic record không đồng nghĩa đã đọc bài; 84000 hữu ích cho bản dịch Tạng nhưng không thay critical edition khi câu hỏi phụ thuộc ngữ văn.
+
+---
+
+# 3. ĐỊNH TUYẾN NHANH
 
 | Tín hiệu chính | Vùng ưu tiên |
 |---|---|
@@ -53,7 +83,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 3. VÙNG 01 — PHẬT GIÁO THỜI KỲ ĐẦU / NIKĀYA–ĀGAMA
+# 4. VÙNG 01 — PHẬT GIÁO THỜI KỲ ĐẦU / NIKĀYA–ĀGAMA
 
 **Dùng khi:** lời dạy sớm, “Đức Phật có nói không?”, so sánh kinh sớm, tiền bộ phái, lớp cổ, bản song hành.
 
@@ -75,7 +105,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 4. VÙNG 02 — THERAVĀDA / PĀLI / CHÚ GIẢI
+# 5. VÙNG 02 — THERAVĀDA / PĀLI / CHÚ GIẢI
 
 **Dùng khi:** Theravāda, Pāli Canon, Abhidhamma Pāli, Buddhaghosa, chú giải/hậu chú giải, lịch sử truyền thống Theravāda.
 
@@ -94,7 +124,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 5. VÙNG 03 — ABHIDHARMA VÀ CÁC BỘ PHÁI
+# 6. VÙNG 03 — ABHIDHARMA VÀ CÁC BỘ PHÁI
 
 **Dùng khi:** Sarvāstivāda, Vaibhāṣika, Sautrāntika, Dharmaguptaka, Mahāsāṃghika và các tranh luận bộ phái/Abhidharma.
 
@@ -115,7 +145,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 6. VÙNG 04 — NĀGĀRJUNA / MADHYAMAKA
+# 7. VÙNG 04 — NĀGĀRJUNA / MADHYAMAKA
 
 **Dùng khi:** Nāgārjuna, MMK, śūnyatā, duyên khởi, hai đế, lịch sử Madhyamaka.
 
@@ -134,7 +164,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 7. VÙNG 05 — YOGĀCĀRA / TATHĀGATAGARBHA
+# 8. VÙNG 05 — YOGĀCĀRA / TATHĀGATAGARBHA
 
 **Dùng khi:** Asaṅga, Vasubandhu, Yogācāra, vijñaptimātra, trisvabhāva, ālayavijñāna, Như Lai tạng.
 
@@ -155,7 +185,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 8. VÙNG 06 — KINH ĐIỂN ĐẠI THỪA
+# 9. VÙNG 06 — KINH ĐIỂN ĐẠI THỪA
 
 **Dùng khi:** Bát-nhã, Pháp Hoa, Hoa Nghiêm, Vimalakīrti, Tịnh độ, Avataṃsaka, Mahāyāna sūtra nói chung.
 
@@ -176,7 +206,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 9. VÙNG 07 — VINAYA / GIỚI / TĂNG ĐOÀN
+# 10. VÙNG 07 — VINAYA / GIỚI / TĂNG ĐOÀN
 
 **Dùng khi:** giới luật, Prātimokṣa, lịch sử tăng đoàn, truyền giới, Bồ-tát giới, luật các bộ phái.
 
@@ -195,7 +225,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 10. VÙNG 08 — VAJRAYĀNA / TANTRA / TÂY TẠNG
+# 11. VÙNG 08 — VAJRAYĀNA / TANTRA / TÂY TẠNG
 
 **Dùng khi:** tantra, mantra, sādhana, maṇḍala, Guhyasamāja, Hevajra, Cakrasaṃvara, Kālacakra, Kangyur/Tengyur, lịch sử Phật giáo Tây Tạng.
 
@@ -215,7 +245,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 11. VÙNG 09 — PHẬT GIÁO ĐÔNG Á
+# 12. VÙNG 09 — PHẬT GIÁO ĐÔNG Á
 
 **Dùng khi:** Trung Quốc, Triều Tiên, Nhật Bản, Việt Nam; Thiền/Chan/Zen, Thiên Thai, Hoa Nghiêm, Tịnh độ, Tam luận, Pháp tướng, Bồ-tát giới Đông Á.
 
@@ -235,7 +265,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 12. VÙNG 10 — GANDHĀRA / TRUNG Á / THỦ BẢN
+# 13. VÙNG 10 — GANDHĀRA / TRUNG Á / THỦ BẢN
 
 **Dùng khi:** Gāndhārī, Kharoṣṭhī, Gandhāra, Bamiyan, Gilgit, Khotan, Dunhuang, Tocharian/Sogdian/Khotanese, mảnh thủ bản, Con đường Tơ lụa.
 
@@ -255,7 +285,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 13. VÙNG 11 — LUẬN LÝ VÀ NHẬN THỨC LUẬN
+# 14. VÙNG 11 — LUẬN LÝ VÀ NHẬN THỨC LUẬN
 
 **Dùng khi:** Dignāga, Dharmakīrti, pramāṇa, pratyakṣa, anumāna, apoha, hetu, tranh luận luận lý/nhận thức luận.
 
@@ -275,7 +305,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 14. VÙNG 12 — BỐI CẢNH ẤN ĐỘ / LIÊN TÔN / KHẢO CỔ
+# 15. VÙNG 12 — BỐI CẢNH ẤN ĐỘ / LIÊN TÔN / KHẢO CỔ
 
 **Dùng khi:** Veda/Brahmanism, Upaniṣad, Jain, Ājīvika, śramaṇa, Aśoka, bia ký, khảo cổ, lịch sử xã hội, thương mại, tự viện, bảo trợ.
 
@@ -297,7 +327,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 ---
 
-# 15. HỌC GIỚI ĐA NGÔN NGỮ — QUY TẮC GỌN
+# 16. HỌC GIỚI ĐA NGÔN NGỮ — QUY TẮC GỌN
 
 Khi đề tài phụ thuộc trực tiếp vào một corpus/ngôn ngữ, ưu tiên học giới có năng lực xử lý corpus đó.
 
@@ -309,7 +339,7 @@ Một bài tiếng Anh tóm tắt nghiên cứu Nhật không đồng nghĩa đ�
 
 ---
 
-# 16. CÁCH DÙNG HẠ TẦNG
+# 17. CÁCH DÙNG HẠ TẦNG
 
 Tên platform ở đây chỉ là nơi **định vị**.
 
@@ -323,8 +353,8 @@ Không biến Source Map thành danh sách website “được phép tin”.
 
 ---
 
-# 17. CÔNG THỨC MAP v3.1
+# 18. CÔNG THỨC MAP v3.1
 
-> **XÁC ĐỊNH ĐỀ TÀI → CHỌN 1–3 VÙNG THẬT SỰ LIÊN QUAN → MỞ CORPUS/NGÔN NGỮ CẦN THIẾT → DÙNG HẠ TẦNG ĐỂ TÌM ITEM → THẨM ĐỊNH ITEM BẰNG `02_NGUON_VA_CHUNG_CU.md`.**
+> **XÁC ĐỊNH ĐỀ TÀI → CHỌN 1–3 VÙNG THẬT SỰ LIÊN QUAN → ƯU TIÊN HẠ TẦNG CHUYÊN NGÀNH → MỞ CORPUS/NGÔN NGỮ CẦN THIẾT → TÌM ITEM → TRUY NGUỒN GỐC KHI MỆNH ĐỀ QUAN TRỌNG → THẨM ĐỊNH ITEM BẰNG `02_NGUON_VA_CHUNG_CU.md`.**
 
 Bản đồ chỉ giúp đi đúng hướng. Chứng cứ thật mới quyết định kết luận.
