@@ -46,7 +46,7 @@ Nếu đề tài nằm ngoài Map, dùng lõi phương pháp để tự dựng p
 | Tantra, mật điển, mantra, sādhana, Tây Tạng | 08 |
 | Trung Quốc, Triều Tiên, Nhật Bản, Việt Nam, Thiền/Tịnh độ/Thiên Thai/Hoa Nghiêm | 09 |
 | Gāndhārī, Gandhāra, Khotan, Dunhuang, Trung Á, thủ bản | 10 |
-| Dignāga, Dharmakīrti, pramāṇa, logic/epistemology | 11 |
+| Dignāga, Dharmakīrti, pramāṇa, luận lý/nhận thức luận | 11 |
 | Veda/Bà-la-môn, Jain, Ājīvika, khảo cổ, bia ký, lịch sử xã hội Ấn Độ | 12 |
 
 Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đó có khả năng thay đổi kết luận.
@@ -60,9 +60,9 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 **Corpus/ngôn ngữ:**
 - Nikāya Pāli;
 - Dīrgha/Madhyama/Saṃyukta/Ekottarika Āgama và kinh biệt dịch Hán;
-- Sanskrit fragments;
+- mảnh Sanskrit;
 - Gāndhārī;
-- Tạng khi có parallel liên quan;
+- Tạng khi có bản song hành liên quan;
 - Vinaya cổ khi hỗ trợ so sánh.
 
 **Hạ tầng gợi ý:** SuttaCentral, Pali Text Society, CBETA, SAT, GRETIL, Gandhari.org, BDRC/BUDA.
@@ -70,7 +70,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 **Cần nhớ:**
 - Pāli không mặc định là “bản gốc”;
 - Āgama Hán không phải một khối đồng nhất;
-- parallel rộng có thể hỗ trợ tổ tiên chung, không tự động chứng minh lời từng chữ của Đức Phật;
+- nhiều bản song hành có thể hỗ trợ một tổ tiên chung, không tự động chứng minh lời từng chữ của Đức Phật;
 - câu hỏi phân tầng phải gọi `03_PHAN_TANG_VAN_BAN.md`.
 
 ---
@@ -163,7 +163,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 - Sanskrit/Buddhist Hybrid Sanskrit khi còn;
 - Hán dịch nhiều lớp và nhiều dịch giả;
 - Tạng;
-- fragment Trung Á/Gandhāra khi liên quan;
+- mảnh Trung Á/Gandhāra khi liên quan;
 - catalog dịch thuật và lịch sử tiếp nhận.
 
 **Hạ tầng gợi ý:** CBETA, SAT, GRETIL, DSBC, BDRC, 84000, BDK/Numata và các edition chuyên ngành.
@@ -178,12 +178,12 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 # 9. VÙNG 07 — VINAYA / GIỚI / TĂNG ĐOÀN
 
-**Dùng khi:** giới luật, Prātimokṣa, lịch sử tăng đoàn, ordination, Bồ-tát giới, luật các bộ phái.
+**Dùng khi:** giới luật, Prātimokṣa, lịch sử tăng đoàn, truyền giới, Bồ-tát giới, luật các bộ phái.
 
 **Corpus/ngôn ngữ:**
 - Pāli Vinaya;
 - Dharmaguptaka, Mahīśāsaka, Mahāsāṃghika, Sarvāstivāda, Mūlasarvāstivāda Vinaya;
-- Prātimokṣa và fragments Sanskrit/Tạng/Hán;
+- Prātimokṣa và mảnh Sanskrit/Tạng/Hán;
 - văn bản Bồ-tát giới khi câu hỏi thuộc Đại thừa/Đông Á.
 
 **Hạ tầng gợi ý:** SuttaCentral, CBETA, SAT, GRETIL, BDRC, 84000.
@@ -203,13 +203,13 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 - Sanskrit tantric texts khi còn;
 - Kangyur/Tengyur;
 - chú giải Ấn Độ/Tạng;
-- Dunhuang và manuscript material khi liên quan;
+- Dunhuang và tư liệu thủ bản khi liên quan;
 - tiểu sử và lịch sử dòng truyền với phê bình nguồn.
 
-**Hạ tầng gợi ý:** BDRC/BUDA, 84000, GRETIL, DSBC, Tibetan Buddhist Resource Center collections và catalog chuyên ngành.
+**Hạ tầng gợi ý:** BDRC/BUDA, 84000, GRETIL, DSBC và catalog chuyên ngành.
 
 **Cần nhớ:**
-- Tây Tạng ≠ Vajrayāna בלבד; nhiều nguồn kinh/luận không tantric;
+- Phật giáo Tây Tạng không đồng nhất với Vajrayāna; nhiều nguồn kinh/luận không phải tantra;
 - tantra có nhiều lớp và hệ phân loại hậu kỳ khác nhau;
 - truyền thống dòng truyền không tự động là biên niên sử phê bình.
 
@@ -226,7 +226,7 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 - văn bia, ngữ lục, thanh quy, sử truyện;
 - Hàn/Nhật/Việt khi câu hỏi thuộc lịch sử khu vực.
 
-**Hạ tầng gợi ý:** CBETA, SAT, DDB, INBUDS, CiNii, J-STAGE, DLMBS, các digital collections khu vực.
+**Hạ tầng gợi ý:** CBETA, SAT, DDB, INBUDS, CiNii, J-STAGE, DLMBS và các bộ sưu tập số khu vực.
 
 **Cần nhớ:**
 - attribution “dịch từ Sanskrit” cần kiểm catalog và nghiên cứu văn bản;
@@ -237,16 +237,16 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 # 12. VÙNG 10 — GANDHĀRA / TRUNG Á / THỦ BẢN
 
-**Dùng khi:** Gāndhārī, Kharoṣṭhī, Gandhāra, Bamiyan, Gilgit, Khotan, Dunhuang, Tocharian/Sogdian/Khotanese, manuscript fragments, Silk Road.
+**Dùng khi:** Gāndhārī, Kharoṣṭhī, Gandhāra, Bamiyan, Gilgit, Khotan, Dunhuang, Tocharian/Sogdian/Khotanese, mảnh thủ bản, Con đường Tơ lụa.
 
 **Corpus/ngôn ngữ:**
 - Gāndhārī manuscripts;
 - Sanskrit Buddhist manuscripts;
 - Khotanese, Tocharian, Sogdian khi liên quan;
 - Hán/Tạng trong lịch sử truyền bá;
-- vật liệu codicology/paleography.
+- dữ liệu cổ tự học và lịch sử vật mang.
 
-**Hạ tầng gợi ý:** Gandhari.org, International Dunhuang Programme, BDRC, GRETIL/DSBC và các catalog manuscript chuyên ngành.
+**Hạ tầng gợi ý:** Gandhari.org, International Dunhuang Programme, BDRC, GRETIL/DSBC và các catalog thủ bản chuyên ngành.
 
 **Cần nhớ:**
 - niên đại vật mang ≠ niên đại sáng tác nội dung;
@@ -257,19 +257,19 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 
 # 13. VÙNG 11 — LUẬN LÝ VÀ NHẬN THỨC LUẬN
 
-**Dùng khi:** Dignāga, Dharmakīrti, pramāṇa, pratyakṣa, anumāna, apoha, hetu, tranh luận logic/epistemology.
+**Dùng khi:** Dignāga, Dharmakīrti, pramāṇa, pratyakṣa, anumāna, apoha, hetu, tranh luận luận lý/nhận thức luận.
 
 **Corpus/ngôn ngữ:**
 - Pramāṇasamuccaya và truyền thống chú giải;
 - Pramāṇavārttika và các tác phẩm Dharmakīrti;
-- Sanskrit fragments/editions;
+- mảnh/edition Sanskrit;
 - Tạng và Hán khi bảo tồn cần thiết;
 - nguồn Nyāya, Mīmāṃsā, Jain khi là đối thoại trực tiếp.
 
-**Hạ tầng gợi ý:** GRETIL, DSBC, BDRC, các critical edition/repository chuyên ngành.
+**Hạ tầng gợi ý:** GRETIL, DSBC, BDRC và các critical edition/repository chuyên ngành.
 
 **Cần nhớ:**
-- thuật ngữ logic cần đọc đúng hệ thống và ngữ cảnh;
+- thuật ngữ luận lý cần đọc đúng hệ thống và ngữ cảnh;
 - không đồng nhất thuật ngữ cùng hình thức giữa các trường phái;
 - nguồn đối thủ phải tách khỏi tự thuật Phật giáo.
 
@@ -285,9 +285,9 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 - Jain Prakrit;
 - Aśokan Prakrit, Greek/Aramaic khi liên quan;
 - bia ký, coins, reliquaries, stūpa, monastery archaeology;
-- sử liệu du hành và nguồn ngoại Phật giáo.
+- sử liệu du hành và nguồn ngoài Phật giáo.
 
-**Hạ tầng gợi ý:** GRETIL, corpus/edition bia ký chuyên ngành, Gandhari.org khi vùng Tây Bắc liên quan, CBETA/SAT cho sử liệu Hán, các publication khảo cổ học.
+**Hạ tầng gợi ý:** GRETIL, corpus/edition bia ký chuyên ngành, Gandhari.org khi vùng Tây Bắc liên quan, CBETA/SAT cho sử liệu Hán, các ấn phẩm khảo cổ học.
 
 **Cần nhớ:**
 - tương đồng khái niệm ≠ tự động là vay mượn;
