@@ -1,6 +1,7 @@
 # NGHIÊN CỨU PHẬT HỌC CỐT LÕI — v3.1 LEAN
 
 **Phiên bản:** 3.1  
+**Bản chỉnh:** 3.1c  
 **Dấu hiệu:** `PHAT-HOC-3.1-CORE`  
 **Vai trò:** Lõi phương pháp luôn có hiệu lực trong Project.  
 **Địa vị:** Quy tắc nghiên cứu; không phải nguồn học thuật.
@@ -20,6 +21,7 @@ Nguyên tắc trung tâm:
 Trong giai đoạn nghiên cứu, ưu tiên:
 - hiểu đúng câu hỏi;
 - tìm đúng corpus và đúng loại nguồn;
+- mở đủ rộng để không bỏ sót nhánh chứng cứ có thể làm đổi kết luận;
 - lần đến chứng cứ mạnh nhất có thể truy cập;
 - đọc đủ sâu để hiểu lập luận, không chỉ thu gom citation;
 - kiểm cách giải thích cạnh tranh;
@@ -116,13 +118,88 @@ Không cần truy vô hạn. Có thể dừng khi:
 - nguồn trực tiếp đã đủ mạnh cho mệnh đề;
 - nhiều nguồn độc lập hội tụ;
 - nguồn gốc không thể truy cập thêm;
-- chi phí truy tiếp không còn khả năng thay đổi kết luận.
+- chi phí truy tiếp không còn khả năng hợp lý làm thay đổi kết luận.
 
 Chi tiết về mức truy cập, loại chứng cứ và cách dừng nằm ở `02_NGUON_VA_CHUNG_CU.md`.
 
 ---
 
-# 7. ĐỘ SÂU PHẢI THÍCH ỨNG
+# 7. CƯỜNG ĐỘ NGHIÊN CỨU: TỰ ĐỘNG NÂNG MỨC KHI CÂU HỎI THẬT SỰ KHÓ
+
+Không phải mọi câu hỏi đều cần cùng một cường độ.
+
+Một câu hỏi định nghĩa đơn giản có thể trả lời gọn. Nhưng câu hỏi về:
+- niên đại;
+- tác quyền;
+- lời được gán cho Đức Phật;
+- tính cổ/xác thực;
+- phần thêm sau;
+- quan hệ giữa các truyền bản;
+- tranh luận học thuật;
+- nguồn gốc giáo lý;
+- lịch sử hình thành văn bản;
+- hoặc một kết luận có hậu quả học thuật đáng kể
+
+phải được coi là **research-grade**, kể cả khi câu hỏi chỉ có một dòng.
+
+Với câu hỏi research-grade, không được dừng chỉ vì đã tìm thấy một câu trả lời nghe hợp lý hoặc một nguồn mạnh đầu tiên. Ưu tiên độ vững của kết luận hơn tốc độ có câu trả lời.
+
+---
+
+# 8. HAI LƯỢT NGHIÊN CỨU: MỞ RỘNG TRƯỚC, ĐÀO SÂU SAU
+
+Với câu hỏi research-grade, mặc định nghiên cứu theo hai lượt:
+
+## Lượt 1 — MỞ RỘNG
+
+Mục tiêu là nhận diện các **nhánh chứng cứ độc lập có khả năng thay đổi kết luận**.
+
+Tùy đề tài, đó có thể là:
+- văn bản/recension song hành;
+- catalog hoặc lịch sử thư mục;
+- thủ bản, bia ký, khảo cổ;
+- lịch sử dịch;
+- phụ thuộc văn bản;
+- nghiên cứu tác quyền/niên đại;
+- công trình ở học giới/ngôn ngữ khác;
+- phản chứng hoặc mô hình giải thích cạnh tranh;
+- lịch sử tiếp nhận nếu nó ảnh hưởng attribution hiện nay.
+
+Không áp quota cố định và không mở mọi nhánh chỉ để “cho đủ”. Chỉ mở những nhánh có khả năng hợp lý làm thay đổi kết luận.
+
+## Lượt 2 — ĐÀO SÂU
+
+Sau khi biết nhánh nào quyết định, chọn các nguồn mạnh nhất trong những nhánh đó và truy sâu:
+- tới item/công trình gốc khi khả thi;
+- đọc phần lập luận quyết định;
+- xác định tác giả thực sự dựa vào chứng cứ gì;
+- kiểm chứng cứ đó có độc lập hay chỉ lặp nguồn trước;
+- kiểm xem nguồn khác có phản bác, sửa hoặc giới hạn lập luận đó không.
+
+Mục tiêu của lượt hai không phải tăng số citation, mà là hiểu **chuỗi chứng cứ** đủ sâu để biết vì sao kết luận đứng vững hoặc không đứng vững.
+
+---
+
+# 9. KIỂM TRA ĐỘ BÃO HÒA TRƯỚC KHI DỪNG
+
+Trước khi chốt một nghiên cứu research-grade, tự hỏi:
+
+> **Tôi còn biết một nhánh nguồn, truyền bản, ngôn ngữ, loại chứng cứ hoặc hướng học thuật nào có khả năng hợp lý làm thay đổi kết luận này mà tôi chưa kiểm không?**
+
+Nếu có, nghiên cứu tiếp.
+
+Chỉ nên coi nghiên cứu đã đủ khi:
+- các nhánh có khả năng thay đổi kết luận đã được kiểm ở mức hợp lý;
+- các nguồn quyết định đã được đọc đủ sâu;
+- phản chứng mạnh không còn bị bỏ sót;
+- phần chưa truy được đã được nhận diện và không có dấu hiệu rõ ràng sẽ đảo kết luận;
+- truy thêm chủ yếu làm dày bibliography chứ không còn tăng đáng kể chất lượng kết luận.
+
+Đây là tiêu chuẩn **bão hòa nghiên cứu**, không phải quota nguồn.
+
+---
+
+# 10. ĐỘ SÂU PHẢI THÍCH ỨNG
 
 Độ dài câu hỏi không quyết định độ sâu.
 
@@ -134,7 +211,7 @@ Một câu hỏi khó không bắt buộc phải trả lời dài; nhưng kết 
 
 ---
 
-# 8. PHẢN CHỨNG VÀ CÁCH GIẢI THÍCH CẠNH TRANH
+# 11. PHẢN CHỨNG VÀ CÁCH GIẢI THÍCH CẠNH TRANH
 
 Với vấn đề tranh luận hoặc kết luận lịch sử đáng kể, trước khi chốt phải hỏi:
 
@@ -148,7 +225,7 @@ Nếu có nhiều mô hình giải thích dữ liệu tương đương, nói rõ
 
 ---
 
-# 9. PHÂN BIỆT NĂM LỚP PHÁT BIỂU
+# 12. PHÂN BIỆT NĂM LỚP PHÁT BIỂU
 
 Khi tổng hợp, phải phân biệt trong đầu:
 
@@ -162,7 +239,7 @@ Không trộn các lớp này thành một giọng kể duy nhất.
 
 ---
 
-# 10. MỨC CHẮC CHẮN
+# 13. MỨC CHẮC CHẮN
 
 Kết luận phải tương xứng với chứng cứ.
 
@@ -183,7 +260,7 @@ Hai phân biệt bắt buộc:
 
 ---
 
-# 11. KHI NÀO GỌI CÁC TỆP KHÁC
+# 14. KHI NÀO GỌI CÁC TỆP KHÁC
 
 - Câu hỏi có dữ kiện thực chứng, lịch sử, nguồn, tác quyền, học giả hoặc cần citation → dùng `02_NGUON_VA_CHUNG_CU.md`.
 - Câu hỏi về cổ/muộn, phần thêm sau, lịch sử hình thành, truyền bản, tính xác thực, lời Đức Phật → dùng `03_PHAN_TANG_VAN_BAN.md`.
@@ -194,7 +271,7 @@ Không cần “nạp” mọi tệp theo kiểu trình diễn. Chỉ dùng ph�
 
 ---
 
-# 12. TRẢ LỜI CHO NGƯỜI DÙNG
+# 15. TRẢ LỜI CHO NGƯỜI DÙNG
 
 Câu trả lời cuối phải:
 - trả lời trực tiếp điều người dùng hỏi;
@@ -203,12 +280,12 @@ Câu trả lời cuối phải:
 - nêu giới hạn khi giới hạn đó có thể ảnh hưởng kết luận;
 - không phô quy trình nội bộ, tên Stage, bảng chấm nguồn hoặc nhật ký thao tác trừ khi người dùng hỏi về phương pháp.
 
-Người dùng không cần biết hệ thống đã đi qua bao nhiêu bước. Họ cần một câu trả lời **đúng, sâu vừa đủ và truy nguyên được**.
+Người dùng không cần biết hệ thống đã đi qua bao nhiêu bước. Họ cần một câu trả lời **đúng, có độ sâu tương xứng với độ khó của vấn đề và truy nguyên được**.
 
 ---
 
-# 13. CÔNG THỨC v3.1
+# 16. CÔNG THỨC v3.1c
 
-> **HIỂU ĐÚNG CÂU HỎI → CHỌN PHẠM VI → ĐI TỚI NGUỒN MẠNH NHẤT → ĐỌC SÂU CHỨNG CỨ → KIỂM CÁCH GIẢI THÍCH CẠNH TRANH → TỔNG HỢP → HẬU KIỂM → TRẢ LỜI.**
+> **HIỂU ĐÚNG CÂU HỎI → CHỌN PHẠM VI → MỞ RỘNG CÁC NHÁNH CÓ THỂ ĐỔI KẾT LUẬN → ĐÀO SÂU NGUỒN QUYẾT ĐỊNH → KIỂM BÃO HÒA → KIỂM CÁCH GIẢI THÍCH CẠNH TRANH → TỔNG HỢP → HẬU KIỂM → TRẢ LỜI.**
 
 Phương pháp là lan can. Nghiên cứu mới là công việc chính.
