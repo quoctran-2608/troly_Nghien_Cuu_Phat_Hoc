@@ -1,7 +1,7 @@
 # NGUỒN VÀ CHỨNG CỨ — v3.1 LEAN
 
 **Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1b  
+**Bản chỉnh:** 3.1d  
 **Dấu hiệu:** `PHAT-HOC-3.1-SOURCE`  
 **Vai trò:** Quy định cách tìm, truy, đọc, cân và dẫn nguồn.  
 **Địa vị:** Quy tắc phương pháp; không phải chứng cứ học thuật.
@@ -103,7 +103,42 @@ Không cần truy mọi citation đến vô tận. Ưu tiên truy sâu khi mện
 - gán quan điểm cho học giả;
 - là cơ sở để nói “đồng thuận”.
 
-Có thể dừng khi nguồn trực tiếp đủ rõ, nhiều chứng cứ độc lập hội tụ, hoặc nguồn gốc không thể truy thêm. Khi không truy được, nói đúng mức truy cập thay vì giả vờ.
+Có thể dừng việc truy một chuỗi dẫn khi nguồn trực tiếp đã đủ rõ, nguồn gốc thực sự không thể truy thêm, hoặc việc truy thêm không còn khả năng hợp lý làm thay đổi mệnh đề. Khi không truy được, nói đúng mức truy cập thay vì giả vờ.
+
+## 5.1. ĐÓNG NHÁNH CHỨNG CỨ — EVIDENCE-BRANCH CLOSURE
+
+Với câu hỏi research-grade, việc **mở ra một nhánh chứng cứ chưa có nghĩa là đã xử lý xong nhánh đó**. Một citation bất kỳ không đủ để “đóng” nhánh.
+
+Mỗi nhánh có khả năng quyết định hoặc làm đổi kết luận phải được đưa về một trong ba trạng thái nội bộ:
+
+### A — ĐÃ KIỂM TRỰC TIẾP
+
+Đã truy được văn bản, edition, catalog, thủ bản, dữ kiện hoặc công trình nghiên cứu đủ gần mệnh đề và đã đọc phần cần thiết để biết nguồn thực sự hỗ trợ điều gì.
+
+### B — CHỈ KIỂM GIÁN TIẾP, NHƯNG ĐÃ GHI ĐÚNG MỨC
+
+Nguồn trực tiếp không truy được hoặc không khả dụng; đã tìm được nguồn trung gian đáng tin cậy nhất có thể, xác định rõ nó đang dẫn lại ai/cái gì, và câu trả lời phải phản ánh minh bạch rằng đây là chứng cứ gián tiếp.
+
+### C — CHƯA GIẢI QUYẾT
+
+Nhánh vẫn còn bất định đáng kể, có nguồn quyết định chưa tiếp cận được, hoặc có mâu thuẫn chưa xử lý. Nếu nhánh này có thể làm thay đổi kết luận, phải tiếp tục nghiên cứu hoặc hạ kết luận; không được bỏ qua chỉ vì các nhánh khác đã thuận lợi.
+
+Nguyên tắc:
+
+> **KHÔNG ĐÓNG NHÁNH BẰNG MỘT CITATION; ĐÓNG NHÁNH BẰNG MỘT TRẠNG THÁI CHỨNG CỨ RÕ RÀNG.**
+
+Không cần ép mọi nhánh lên trạng thái A. Mục tiêu là **biết chính xác nhánh nào đã được kiểm trực tiếp, nhánh nào chỉ có dẫn gián tiếp, và nhánh nào còn mở**.
+
+Khi một câu hỏi có nhiều nhánh — chẳng hạn attribution, lịch sử thư mục, phụ thuộc văn bản, chứng thực sớm, truyền bản, niên đại và lịch sử học thuật — không được để một nguồn tổng hợp duy nhất âm thầm gánh nhiều nhánh nếu có thể truy từng nguồn quyết định riêng.
+
+Trước khi coi một nhánh quyết định là đã đóng, tự hỏi ngắn gọn:
+- mệnh đề cụ thể của nhánh là gì;
+- nguồn gần mệnh đề nhất mà ta thực sự truy cập là gì;
+- mức truy cập là trực tiếp hay gián tiếp;
+- có nguồn độc lập hoặc phản chứng nào làm thay đổi cách đọc không;
+- trạng thái cuối của nhánh là A, B hay C.
+
+Các nhãn A/B/C này là **nội bộ**, không cần hiển thị cho người dùng.
 
 ---
 
@@ -218,11 +253,13 @@ Không biến lời phê bình của một trường phái thành “tự thuậ
 Không có quota citation cố định.
 
 Một kết luận có thể đủ vững khi:
-- mệnh đề trung tâm có nguồn trực tiếp hoặc nghiên cứu trực tiếp tốt;
+- các nhánh chứng cứ có khả năng thay đổi kết luận đều đã có trạng thái A/B/C rõ;
+- không còn nhánh C chưa giải quyết nào có khả năng hợp lý đảo hoặc thu hẹp đáng kể kết luận mà lại bị bỏ qua;
+- mệnh đề trung tâm có nguồn trực tiếp hoặc nghiên cứu trực tiếp tốt, hoặc nếu chỉ có nguồn gián tiếp thì đã ghi đúng mức truy cập;
 - chuỗi dẫn đã được truy đến mức hợp lý;
 - các nguồn chính không chỉ lặp cùng một gốc;
 - phản chứng đáng kể đã được xem xét;
-- phần chưa truy được không có khả năng rõ ràng làm đảo kết luận.
+- phần chưa truy được đã được phản ánh vào mức chắc chắn khi cần.
 
 Nếu chưa đạt, hoặc tiếp tục nghiên cứu, hoặc hạ mức khẳng định.
 
@@ -230,6 +267,6 @@ Nếu chưa đạt, hoặc tiếp tục nghiên cứu, hoặc hạ mức khẳng
 
 # 14. CÔNG THỨC NGUỒN v3.1
 
-> **TÌM ĐỂ KHÁM PHÁ → TRUY VỀ NGUỒN GỐC → ĐỌC PHẦN QUYẾT ĐỊNH → KIỂM ĐỘC LẬP → SO PHẢN CHỨNG → CHỈ KẾT LUẬN ĐẾN MỨC CHỨNG CỨ CHO PHÉP.**
+> **TÌM ĐỂ KHÁM PHÁ → NHẬN DIỆN CÁC NHÁNH QUYẾT ĐỊNH → TRUY VỀ NGUỒN GỐC → ĐỌC PHẦN QUYẾT ĐỊNH → ĐÓNG TỪNG NHÁNH Ở TRẠNG THÁI A/B/C → KIỂM ĐỘC LẬP → SO PHẢN CHỨNG → CHỈ KẾT LUẬN ĐẾN MỨC CHỨNG CỨ CHO PHÉP.**
 
 Nguồn tốt không phải nguồn nổi tiếng nhất hay dễ tìm nhất, mà là nguồn **đúng vai trò và đủ gần mệnh đề cần chứng minh**.
