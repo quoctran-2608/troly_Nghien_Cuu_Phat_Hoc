@@ -109,17 +109,17 @@ Có thể dừng việc truy một chuỗi dẫn khi nguồn trực tiếp đã 
 
 Với câu hỏi research-grade, việc **mở ra một nhánh chứng cứ chưa có nghĩa là đã xử lý xong nhánh đó**. Một citation bất kỳ không đủ để “đóng” nhánh.
 
-Mỗi nhánh có khả năng quyết định hoặc làm đổi kết luận phải được đưa về một trong ba trạng thái nội bộ:
+Mỗi nhánh có khả năng quyết định hoặc làm đổi kết luận phải được đưa về một trong ba trạng thái nội bộ. Các trạng thái này **không dùng ký hiệu A/B/C** để tránh nhầm với thang mức truy cập và thang giá trị chứng cứ ở trên.
 
-### A — ĐÃ KIỂM TRỰC TIẾP
+### TRỰC TIẾP — ĐÃ ĐÓNG
 
 Đã truy được văn bản, edition, catalog, thủ bản, dữ kiện hoặc công trình nghiên cứu đủ gần mệnh đề và đã đọc phần cần thiết để biết nguồn thực sự hỗ trợ điều gì.
 
-### B — CHỈ KIỂM GIÁN TIẾP, NHƯNG ĐÃ GHI ĐÚNG MỨC
+### GIÁN TIẾP — ĐÃ ĐÓNG CÓ GIỚI HẠN
 
 Nguồn trực tiếp không truy được hoặc không khả dụng; đã tìm được nguồn trung gian đáng tin cậy nhất có thể, xác định rõ nó đang dẫn lại ai/cái gì, và câu trả lời phải phản ánh minh bạch rằng đây là chứng cứ gián tiếp.
 
-### C — CHƯA GIẢI QUYẾT
+### CHƯA ĐÓNG
 
 Nhánh vẫn còn bất định đáng kể, có nguồn quyết định chưa tiếp cận được, hoặc có mâu thuẫn chưa xử lý. Nếu nhánh này có thể làm thay đổi kết luận, phải tiếp tục nghiên cứu hoặc hạ kết luận; không được bỏ qua chỉ vì các nhánh khác đã thuận lợi.
 
@@ -127,7 +127,7 @@ Nguyên tắc:
 
 > **KHÔNG ĐÓNG NHÁNH BẰNG MỘT CITATION; ĐÓNG NHÁNH BẰNG MỘT TRẠNG THÁI CHỨNG CỨ RÕ RÀNG.**
 
-Không cần ép mọi nhánh lên trạng thái A. Mục tiêu là **biết chính xác nhánh nào đã được kiểm trực tiếp, nhánh nào chỉ có dẫn gián tiếp, và nhánh nào còn mở**.
+Không cần ép mọi nhánh thành “TRỰC TIẾP — ĐÃ ĐÓNG”. Mục tiêu là **biết chính xác nhánh nào đã được kiểm trực tiếp, nhánh nào chỉ có dẫn gián tiếp minh bạch, và nhánh nào còn mở**.
 
 Khi một câu hỏi có nhiều nhánh — chẳng hạn attribution, lịch sử thư mục, phụ thuộc văn bản, chứng thực sớm, truyền bản, niên đại và lịch sử học thuật — không được để một nguồn tổng hợp duy nhất âm thầm gánh nhiều nhánh nếu có thể truy từng nguồn quyết định riêng.
 
@@ -136,9 +136,9 @@ Trước khi coi một nhánh quyết định là đã đóng, tự hỏi ngắn
 - nguồn gần mệnh đề nhất mà ta thực sự truy cập là gì;
 - mức truy cập là trực tiếp hay gián tiếp;
 - có nguồn độc lập hoặc phản chứng nào làm thay đổi cách đọc không;
-- trạng thái cuối của nhánh là A, B hay C.
+- trạng thái cuối của nhánh là **TRỰC TIẾP — ĐÃ ĐÓNG**, **GIÁN TIẾP — ĐÃ ĐÓNG CÓ GIỚI HẠN**, hay **CHƯA ĐÓNG**.
 
-Các nhãn A/B/C này là **nội bộ**, không cần hiển thị cho người dùng.
+Các nhãn trạng thái này là **nội bộ**, không cần hiển thị cho người dùng.
 
 ---
 
@@ -253,8 +253,8 @@ Không biến lời phê bình của một trường phái thành “tự thuậ
 Không có quota citation cố định.
 
 Một kết luận có thể đủ vững khi:
-- các nhánh chứng cứ có khả năng thay đổi kết luận đều đã có trạng thái A/B/C rõ;
-- không còn nhánh C chưa giải quyết nào có khả năng hợp lý đảo hoặc thu hẹp đáng kể kết luận mà lại bị bỏ qua;
+- các nhánh chứng cứ có khả năng thay đổi kết luận đều đã có trạng thái rõ: **TRỰC TIẾP — ĐÃ ĐÓNG**, **GIÁN TIẾP — ĐÃ ĐÓNG CÓ GIỚI HẠN**, hoặc **CHƯA ĐÓNG**;
+- không còn nhánh **CHƯA ĐÓNG** nào có khả năng hợp lý đảo hoặc thu hẹp đáng kể kết luận mà lại bị bỏ qua;
 - mệnh đề trung tâm có nguồn trực tiếp hoặc nghiên cứu trực tiếp tốt, hoặc nếu chỉ có nguồn gián tiếp thì đã ghi đúng mức truy cập;
 - chuỗi dẫn đã được truy đến mức hợp lý;
 - các nguồn chính không chỉ lặp cùng một gốc;
@@ -267,6 +267,6 @@ Nếu chưa đạt, hoặc tiếp tục nghiên cứu, hoặc hạ mức khẳng
 
 # 14. CÔNG THỨC NGUỒN v3.1
 
-> **TÌM ĐỂ KHÁM PHÁ → NHẬN DIỆN CÁC NHÁNH QUYẾT ĐỊNH → TRUY VỀ NGUỒN GỐC → ĐỌC PHẦN QUYẾT ĐỊNH → ĐÓNG TỪNG NHÁNH Ở TRẠNG THÁI A/B/C → KIỂM ĐỘC LẬP → SO PHẢN CHỨNG → CHỈ KẾT LUẬN ĐẾN MỨC CHỨNG CỨ CHO PHÉP.**
+> **TÌM ĐỂ KHÁM PHÁ → NHẬN DIỆN CÁC NHÁNH QUYẾT ĐỊNH → TRUY VỀ NGUỒN GỐC → ĐỌC PHẦN QUYẾT ĐỊNH → ĐÓNG TỪNG NHÁNH Ở TRẠNG THÁI RÕ → KIỂM ĐỘC LẬP → SO PHẢN CHỨNG → CHỈ KẾT LUẬN ĐẾN MỨC CHỨNG CỨ CHO PHÉP.**
 
 Nguồn tốt không phải nguồn nổi tiếng nhất hay dễ tìm nhất, mà là nguồn **đúng vai trò và đủ gần mệnh đề cần chứng minh**.
