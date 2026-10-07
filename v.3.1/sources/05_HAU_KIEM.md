@@ -87,17 +87,17 @@ Nếu nguồn trung gian vẫn đang gánh kết luận chính trong khi nguồn
 
 Với câu hỏi research-grade, rà lại những **nhánh chứng cứ có khả năng thay đổi kết luận** đã được mở trong nghiên cứu.
 
-Mỗi nhánh quyết định phải có một trạng thái nội bộ rõ:
+Mỗi nhánh quyết định phải có một trạng thái nội bộ rõ. Không dùng ký hiệu A/B/C ở đây để tránh nhầm với thang mức truy cập và thang giá trị chứng cứ:
 
-- **A — đã kiểm trực tiếp:** nguồn/item/công trình đủ gần mệnh đề đã được truy cập và đọc phần cần thiết;
-- **B — chỉ kiểm gián tiếp nhưng đã ghi đúng mức:** nguồn trực tiếp không truy được, đã dùng nguồn trung gian tốt nhất có thể và câu chữ nói rõ giới hạn;
-- **C — chưa giải quyết:** còn bất định, mâu thuẫn hoặc nguồn quyết định chưa tiếp cận được.
+- **TRỰC TIẾP — ĐÃ ĐÓNG:** nguồn/item/công trình đủ gần mệnh đề đã được truy cập và đọc phần cần thiết;
+- **GIÁN TIẾP — ĐÃ ĐÓNG CÓ GIỚI HẠN:** nguồn trực tiếp không truy được, đã dùng nguồn trung gian tốt nhất có thể và câu chữ nói rõ giới hạn;
+- **CHƯA ĐÓNG:** còn bất định, mâu thuẫn hoặc nguồn quyết định chưa tiếp cận được.
 
 Không hỏi “nhánh này có citation chưa?” mà hỏi:
 
 > **Nhánh này đã được đóng bằng chứng cứ ở trạng thái nào?**
 
-Nếu một nhánh C còn khả năng hợp lý đảo, làm yếu hoặc thu hẹp đáng kể kết luận, không được gửi kết luận mạnh. Quay lại nghiên cứu hoặc hạ kết luận.
+Nếu một nhánh **CHƯA ĐÓNG** còn khả năng hợp lý đảo, làm yếu hoặc thu hẹp đáng kể kết luận, không được gửi kết luận mạnh. Quay lại nghiên cứu hoặc hạ kết luận.
 
 Nếu nhiều nhánh quan trọng cùng dựa vào một trang tổng hợp duy nhất, phải kiểm xem trang đó chỉ là điểm khám phá hay thực sự đủ sức gánh từng mệnh đề. Không để một aggregator âm thầm thay thế nhiều nguồn quyết định.
 
@@ -232,7 +232,7 @@ Không gửi bản kết luận mạnh nếu còn một trong các lỗi sau:
 - nguồn hoặc citation không hỗ trợ mệnh đề;
 - nguồn trung gian đang gánh kết luận chính dù nguồn trực tiếp khả dụng;
 - mô tả chi tiết quan điểm, lập luận hoặc niên đại do một học giả đề xuất bằng nguồn dẫn lại nhưng không ghi rõ là dẫn gián tiếp;
-- một nhánh chứng cứ quyết định còn ở trạng thái C và có khả năng hợp lý làm đảo hoặc thu hẹp đáng kể kết luận nhưng không được phản ánh;
+- một nhánh chứng cứ quyết định còn **CHƯA ĐÓNG** và có khả năng hợp lý làm đảo hoặc thu hẹp đáng kể kết luận nhưng không được phản ánh;
 - nhiều nhánh quyết định bị “đóng giả” chỉ bằng cùng một aggregator mà không kiểm các item/công trình gốc khi khả thi;
 - chỉ có abstract/metadata/snippet nhưng viết như đã đọc lập luận;
 - locator hoặc bibliographic detail có dấu hiệu đoán;
@@ -294,8 +294,8 @@ Không để lỗi trình bày nhỏ làm giảm độ tin cậy của một câ
 Có thể tự phân loại trước khi gửi:
 
 - **ĐẠT:** các nhánh quyết định đã được đóng đủ, không còn hard blocker, đầu ra sạch.
-- **ĐẠT CÓ GIỚI HẠN:** có nhánh chỉ ở trạng thái B hoặc C nhưng giới hạn đã được phản ánh trung thực và không cho phép câu chữ mạnh hơn chứng cứ.
-- **QUAY LẠI NGHIÊN CỨU:** còn hard blocker học thuật hoặc nhánh C có thể thay đổi kết luận.
+- **ĐẠT CÓ GIỚI HẠN:** có nhánh ở trạng thái **GIÁN TIẾP — ĐÃ ĐÓNG CÓ GIỚI HẠN** hoặc **CHƯA ĐÓNG**, nhưng giới hạn đã được phản ánh trung thực và câu chữ không mạnh hơn chứng cứ.
+- **QUAY LẠI NGHIÊN CỨU:** còn hard blocker học thuật hoặc nhánh **CHƯA ĐÓNG** có thể thay đổi kết luận.
 
 Không cần hiển thị các nhãn này cho người dùng.
 
@@ -304,7 +304,7 @@ Không cần hiển thị các nhãn này cho người dùng.
 # 16. CHECKLIST 10 CÂU CUỐI
 
 1. Tôi đang trả lời đúng đối tượng và phạm vi chưa?
-2. Các nhánh chứng cứ quyết định đã có trạng thái A/B/C rõ chưa?
+2. Các nhánh chứng cứ quyết định đã có trạng thái đóng/mở rõ chưa?
 3. Mệnh đề trung tâm có nguồn đủ gần không?
 4. Tôi có dừng quá sớm ở nguồn tổng hợp hoặc aggregator không?
 5. Tôi có giả mức truy cập hoặc gán lời học giả mạnh hơn nguồn cho phép không?
@@ -320,6 +320,6 @@ Nếu một câu trả lời quan trọng không qua 10 câu này, chưa nên g�
 
 # 17. CÔNG THỨC HẬU KIỂM v3.1
 
-> **KIỂM ĐÚNG ĐỐI TƯỢNG → KIỂM CHUỖI NGUỒN → KIỂM ĐÓNG NHÁNH A/B/C → KIỂM MỨC TRUY CẬP → KIỂM LOCATOR/ĐỘC LẬP → KIỂM PHẢN CHỨNG → KIỂM SỨC MẠNH KẾT LUẬN → KIỂM GIỚI HẠN → HARD-BLOCKER SCAN → DỌN ĐẦU RA → GỬI.**
+> **KIỂM ĐÚNG ĐỐI TƯỢNG → KIỂM CHUỖI NGUỒN → KIỂM ĐÓNG NHÁNH → KIỂM MỨC TRUY CẬP → KIỂM LOCATOR/ĐỘC LẬP → KIỂM PHẢN CHỨNG → KIỂM SỨC MẠNH KẾT LUẬN → KIỂM GIỚI HẠN → HARD-BLOCKER SCAN → DỌN ĐẦU RA → GỬI.**
 
 Hậu kiểm tốt không làm nghiên cứu cứng hơn; nó ngăn một nghiên cứu tốt bị phá bởi nhánh chứng cứ chưa đóng, nguồn trung gian bị dùng quá mức, lỗi tự tin hoặc trình bày cẩu thả.
