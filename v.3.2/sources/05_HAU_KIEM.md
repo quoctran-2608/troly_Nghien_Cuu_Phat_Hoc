@@ -1,7 +1,7 @@
 # HẬU KIỂM HỌC THUẬT VÀ ĐẦU RA — v3.2 LEAN
 
 **Phiên bản:** 3.2  
-**Bản chỉnh:** 3.2  
+**Bản chỉnh:** 3.2a  
 **Dấu hiệu:** `PHAT-HOC-3.2-AUDIT`  
 **Vai trò:** Chạy sau khi nghiên cứu để phát hiện lỗi nguồn, logic, phạm vi và trình bày.  
 **Địa vị:** Quy trình nội bộ; không phải nguồn học thuật.
@@ -80,6 +80,8 @@ Với các mệnh đề trung tâm, hỏi:
 6. Nếu có thể truy sâu thêm và mệnh đề là trụ cột, tại sao tôi dừng?
 
 **Cổng attribution học giả:** nếu câu trả lời viết theo dạng “X lập luận…”, “X đặt niên đại…”, “X chứng minh/chỉ ra…” hoặc mô tả chi tiết quan điểm của một học giả, citation phải là chính công trình của X hoặc mức truy cập phải được ghi rõ là gián tiếp. Không để một nguồn trung gian đứng sau câu văn khiến người đọc hiểu rằng công trình gốc đã được kiểm trực tiếp.
+
+**Cổng nguồn tự thuật/truyền thống trực tiếp:** nếu câu trả lời mô tả một tác giả, trường phái hoặc truyền thống **tự trình bày lập trường của mình thế nào**, phải kiểm xem chính trước tác/edition/e-text/scan tương ứng có còn truy cập hợp lý không. Nếu có, nghiên cứu hiện đại chỉ nên giúp định vị, phiên dịch và diễn giải, không thay chính văn làm chứng cứ chính. Nếu nguyên văn/nguyên ngữ được lấy qua nguồn trung gian mà chưa kiểm bản gốc, phải ghi đúng tình trạng gián tiếp; nếu chính văn tồn tại nhưng công cụ chưa định vị hoặc đọc được đoạn quyết định, không được coi nhánh đó là đã kiểm trực tiếp.
 
 Nếu nguồn trung gian vẫn đang gánh kết luận chính trong khi nguồn gốc khả dụng, quay lại nghiên cứu. Nếu nguồn gốc không truy được, hạ mức mô tả hoặc ghi rõ “theo nguồn A dẫn lại X”.
 
@@ -232,6 +234,7 @@ Không gửi bản kết luận mạnh nếu còn một trong các lỗi sau:
 - nguồn hoặc citation không hỗ trợ mệnh đề;
 - nguồn trung gian đang gánh kết luận chính dù nguồn trực tiếp khả dụng;
 - mô tả chi tiết quan điểm, lập luận hoặc niên đại do một học giả đề xuất bằng nguồn dẫn lại nhưng không ghi rõ là dẫn gián tiếp;
+- để nghiên cứu hiện đại nói thay một tác giả/trường phái/truyền thống về chính lập trường tự thuật dù chính văn trực tiếp còn truy được hợp lý, hoặc trích nguyên ngữ qua nguồn trung gian như thể đã kiểm bản gốc;
 - một nhánh chứng cứ quyết định còn **CHƯA ĐÓNG** và có khả năng hợp lý làm đảo hoặc thu hẹp đáng kể kết luận nhưng không được phản ánh;
 - nhiều nhánh quyết định bị “đóng giả” chỉ bằng cùng một aggregator mà không kiểm các item/công trình gốc khi khả thi;
 - chỉ có abstract/metadata/snippet nhưng viết như đã đọc lập luận;
@@ -309,7 +312,7 @@ Không cần hiển thị các nhãn này cho người dùng.
 2. Các nhánh chứng cứ quyết định đã có trạng thái đóng/mở rõ chưa?
 3. Mệnh đề trung tâm có nguồn đủ gần không?
 4. Tôi có dừng quá sớm ở nguồn tổng hợp hoặc aggregator không?
-5. Tôi có giả mức truy cập hoặc gán lời học giả mạnh hơn nguồn cho phép không?
+5. Tôi có giả mức truy cập hoặc gán lời học giả/tác giả/truyền thống mạnh hơn nguồn cho phép không?
 6. Citation/locator có thật và hỗ trợ đúng câu không?
 7. Các nguồn chính có thật sự độc lập và phản chứng quan trọng đã được xét chưa?
 8. Câu chữ có mạnh hơn chứng cứ hoặc độ bao phủ không?
