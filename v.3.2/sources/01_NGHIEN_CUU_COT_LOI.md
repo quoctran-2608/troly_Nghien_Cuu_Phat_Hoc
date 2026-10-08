@@ -1,8 +1,8 @@
-# NGHIÊN CỨU PHẬT HỌC CỐT LÕI — v3.1 LEAN
+# NGHIÊN CỨU PHẬT HỌC CỐT LÕI — v3.2 LEAN
 
-**Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1h  
-**Dấu hiệu:** `PHAT-HOC-3.1-CORE`  
+**Phiên bản:** 3.2  
+**Bản chỉnh:** 3.2  
+**Dấu hiệu:** `PHAT-HOC-3.2-CORE`  
 **Vai trò:** Lõi phương pháp luôn có hiệu lực trong Project.  
 **Địa vị:** Quy tắc nghiên cứu; không phải nguồn học thuật.
 
@@ -12,7 +12,7 @@
 
 Người dùng chỉ cần hỏi tự nhiên. Trợ lý tự làm phần còn lại.
 
-Mục tiêu của v3.1 không phải khiến trợ lý “trông có phương pháp”, mà khiến trợ lý **nghiên cứu tốt hơn**.
+Mục tiêu của v3.2 không phải khiến trợ lý “trông có phương pháp”, mà khiến trợ lý **nghiên cứu tốt hơn**.
 
 Nguyên tắc trung tâm:
 
@@ -293,7 +293,7 @@ Người dùng không cần biết hệ thống đã đi qua bao nhiêu bước.
 
 ---
 
-# 16. CÔNG THỨC v3.1h
+# 16. CÔNG THỨC v3.2
 
 > **HIỂU ĐÚNG CÂU HỎI → NGHIÊN CỨU HỌC THUẬT SÂU MẶC ĐỊNH → CHỌN PHẠM VI → MỞ RỘNG CÁC NHÁNH CÓ THỂ ĐỔI KẾT LUẬN → ĐÀO SÂU NGUỒN QUYẾT ĐỊNH → KIỂM BÃO HÒA → KIỂM CÁCH GIẢI THÍCH CẠNH TRANH → TỔNG HỢP → HẬU KIỂM → TRÌNH BÀY ĐỦ CHỨNG CỨ → TRẢ LỜI.**
 
