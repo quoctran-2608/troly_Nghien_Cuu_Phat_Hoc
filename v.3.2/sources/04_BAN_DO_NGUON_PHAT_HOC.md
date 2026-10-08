@@ -1,7 +1,7 @@
 # BẢN ĐỒ NGUỒN PHẬT HỌC — v3.1 LEAN
 
 **Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1a  
+**Bản chỉnh:** 3.1b  
 **Dấu hiệu:** `PHAT-HOC-3.1-MAP`  
 **Vai trò:** Bản đồ định tuyến corpus, ngôn ngữ, hạ tầng và tuyến học giới.  
 **Địa vị:** Công cụ tìm đường; không phải nguồn học thuật và không phải whitelist.
@@ -241,7 +241,8 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 **Cần nhớ:**
 - Phật giáo Tây Tạng không đồng nhất với Vajrayāna; nhiều nguồn kinh/luận không phải tantra;
 - tantra có nhiều lớp và hệ phân loại hậu kỳ khác nhau;
-- truyền thống dòng truyền không tự động là biên niên sử phê bình.
+- truyền thống dòng truyền không tự động là biên niên sử phê bình;
+- khi câu hỏi là cách một truyền thống Tây Tạng hiểu giáo lý, trước tác/chú giải Tây Tạng có thể là nguồn trực tiếp cho lịch sử diễn giải và không nên bị thay bằng tóm tắt của học giả phương Tây.
 
 ---
 
@@ -261,7 +262,8 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 **Cần nhớ:**
 - attribution “dịch từ Sanskrit” cần kiểm catalog và nghiên cứu văn bản;
 - “kinh ngụy” là phân loại lịch sử/thư mục, không phải phán xét giá trị;
-- không đồng nhất tiếp nhận Đông Á với nghĩa gốc Ấn Độ của văn bản.
+- không đồng nhất tiếp nhận Đông Á với nghĩa gốc Ấn Độ của văn bản;
+- scholarship Trung Quốc/Đài Loan và Nhật Bản có thể là nghiên cứu văn bản–lịch sử trung tâm của đề tài, không chỉ là “tiếp nhận khu vực”.
 
 ---
 
@@ -317,25 +319,36 @@ Một câu hỏi có thể cần nhiều vùng. Chỉ ghép khi việc ghép đ�
 - bia ký, coins, reliquaries, stūpa, monastery archaeology;
 - sử liệu du hành và nguồn ngoài Phật giáo.
 
-**Hạ tầng gợi ý:** GRETIL, corpus/edition bia ký chuyên ngành, Gandhari.org khi vùng Tây Bắc liên quan, CBETA/SAT cho sử liệu Hán, các ấn phẩm khảo cổ học.
+**Hạ tầng gợi ý:** GRETIL, corpus/edition bia ký chuyên ngành, Gandhari.org khi vùng Tây Bắc liên quan, CBETA/SAT cho sử liệu Hán, các ấn phẩm khảo cổ học, repository và nhà xuất bản chuyên về Indology/Vedic Studies khi phù hợp.
 
 **Cần nhớ:**
 - tương đồng khái niệm ≠ tự động là vay mượn;
 - “Upaniṣad” không phải một khối đồng thời;
 - văn bản, bia ký và khảo cổ là các loại chứng cứ khác nhau;
-- không dùng văn bản hậu kỳ như cửa sổ trực tiếp vào thế kỷ V TCN nếu chưa biện minh.
+- không dùng văn bản hậu kỳ như cửa sổ trực tiếp vào thế kỷ V TCN nếu chưa biện minh;
+- nếu claim thực chất nói về nghĩa, niên đại, lớp văn bản hoặc lịch sử tư tưởng của Veda/Upaniṣad/Brahmanism, phải kiểm scholarship chuyên ngành Vedic Studies/Upaniṣadic Studies/Indology hoặc lịch sử tôn giáo Ấn Độ; một Buddhist Studies work tóm tắt các văn bản ấy không tự động thay thế được chuyên môn này.
 
 ---
 
-# 16. HỌC GIỚI ĐA NGÔN NGỮ — QUY TẮC GỌN
+# 16. HỌC GIỚI ĐA NGÔN NGỮ VÀ ĐA TRUYỀN THỐNG NGHIÊN CỨU
 
-Khi đề tài phụ thuộc trực tiếp vào một corpus/ngôn ngữ, ưu tiên học giới có năng lực xử lý corpus đó.
+Nguyên tắc trung tâm:
 
-Có thể cần Nhật, Hoa/Đài Loan, Hàn, Pháp, Đức, Nga, Ba Lan, Nam Á hoặc các tuyến khác.
+> **KHÔNG COI SCHOLARSHIP TIẾNG ANH LÀ ĐẠI DIỆN MẶC ĐỊNH CHO TOÀN BỘ HỌC GIỚI QUỐC TẾ.**
 
-Không có quota quốc gia. Chỉ mở nhánh nếu nó có khả năng thay đổi câu trả lời.
+Khi đề tài phụ thuộc trực tiếp vào một corpus, ngôn ngữ, vùng truyền thừa hoặc lịch sử nghiên cứu, phải chủ động kiểm các tuyến học giới có năng lực và đóng góp đáng kể cho chính đề tài đó nếu chúng có khả năng làm đổi, bổ sung hoặc giới hạn kết luận.
 
-Một bài tiếng Anh tóm tắt nghiên cứu Nhật không đồng nghĩa đã khảo sát học giới Nhật.
+Tùy đề tài, có thể cần các truyền thống/tuyến nghiên cứu Nhật, Hoa/Đài Loan, Hàn, Pháp/Bỉ, Anh/Đức, Nga/Ba Lan, Nam Á, Tây Tạng hoặc các tuyến khác. Đây không phải danh sách đóng và không có học giới quốc gia nào mặc định “cao hơn” học giới khác.
+
+Đặc biệt:
+- với Phật giáo Đông Á, nghiên cứu Trung Quốc/Đài Loan và Nhật Bản có thể là scholarship văn bản–lịch sử hàng đầu, không chỉ là tài liệu về “tiếp nhận khu vực”;
+- với Phật giáo Tây Tạng, cần phân biệt nguồn scholastic Tạng trực tiếp với scholarship hiện đại về Tây Tạng; không để bản tóm tắt phương Tây thay thế nguồn Tạng khi chính cách hiểu của truyền thống là đối tượng nghiên cứu;
+- với Abhidharma, Madhyamaka, Yogācāra, logic, lịch sử kinh điển hoặc manuscript studies, các truyền thống nghiên cứu Pháp/Bỉ, Anh/Đức, Nga/Ba Lan, Nhật hoặc Hoa có thể chứa những công trình nền tảng mà literature tiếng Anh đương đại chỉ dẫn lại;
+- với Veda/Upaniṣad/Brahmanism hoặc lĩnh vực ngoài Buddhist Studies, phải mở sang học giới chuyên ngành tương ứng thay vì chỉ dùng Buddhist scholars mô tả lĩnh vực đó.
+
+Một bài tiếng Anh tóm tắt nghiên cứu Nhật/Hoa/Nga/Pháp không đồng nghĩa đã khảo sát chính học giới đó. Nếu công trình gốc có thể truy hợp lý và claim quan trọng, áp dụng `02_NGUON_VA_CHUNG_CU.md` để truy tiếp. Nếu không truy được, nêu rõ giới hạn thay vì mô tả như đã kiểm trực tiếp.
+
+Không có quota quốc gia hay quota ngôn ngữ. Chỉ mở nhánh khi nó có khả năng hợp lý thay đổi câu trả lời, làm rõ lịch sử tranh luận hoặc ngăn thiên lệch do chỉ nhìn một hệ học thuật.
 
 ---
 
@@ -355,6 +368,6 @@ Không biến Source Map thành danh sách website “được phép tin”.
 
 # 18. CÔNG THỨC MAP v3.1
 
-> **XÁC ĐỊNH ĐỀ TÀI → CHỌN 1–3 VÙNG THẬT SỰ LIÊN QUAN → ƯU TIÊN HẠ TẦNG CHUYÊN NGÀNH → MỞ CORPUS/NGÔN NGỮ CẦN THIẾT → TÌM ITEM → TRUY NGUỒN GỐC KHI MỆNH ĐỀ QUAN TRỌNG → THẨM ĐỊNH ITEM BẰNG `02_NGUON_VA_CHUNG_CU.md`.**
+> **XÁC ĐỊNH ĐỀ TÀI → CHỌN 1–3 VÙNG THẬT SỰ LIÊN QUAN → ƯU TIÊN HẠ TẦNG CHUYÊN NGÀNH → MỞ CORPUS/NGÔN NGỮ/HỌC GIỚI/NGÀNH CHUYÊN MÔN CẦN THIẾT → TÌM ITEM → TRUY NGUỒN GỐC KHI MỆNH ĐỀ QUAN TRỌNG → THẨM ĐỊNH ITEM BẰNG `02_NGUON_VA_CHUNG_CU.md`.**
 
 Bản đồ chỉ giúp đi đúng hướng. Chứng cứ thật mới quyết định kết luận.
