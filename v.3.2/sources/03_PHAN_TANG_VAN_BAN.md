@@ -1,7 +1,7 @@
-# PHÂN TẦNG VĂN BẢN VÀ LỊCH SỬ HÌNH THÀNH — v3.1 LEAN
+# PHÂN TẦNG VĂN BẢN VÀ LỊCH SỬ HÌNH THÀNH — v3.2 LEAN
 
-**Phiên bản:** 3.1  
-**Dấu hiệu:** `PHAT-HOC-3.1-STRAT`  
+**Phiên bản:** 3.2  
+**Dấu hiệu:** `PHAT-HOC-3.2-STRAT`  
 **Vai trò:** Workflow chuyên biệt cho câu hỏi về độ cổ, lớp văn bản, biên tập, truyền bản, interpolation, tác quyền và lịch sử hình thành.  
 **Địa vị:** Quy tắc phương pháp; không phải chứng cứ học thuật.
 
@@ -277,7 +277,7 @@ Nếu chưa phân biệt được các mô hình, kết luận đúng có thể 
 
 ---
 
-# 15. CÔNG THỨC PHÂN TẦNG v3.1
+# 15. CÔNG THỨC PHÂN TẦNG v3.2
 
 > **ĐỊNH DANH ĐÚNG ĐỐI TƯỢNG → TÁCH CÁC LỚP NIÊN ĐẠI → SO TRUYỀN BẢN VÀ NGOẠI CHỨNG → XEM CẤU TRÚC/NGỮ VĂN/LỊCH SỬ → XÂY NIÊN ĐẠI TƯƠNG ĐỐI → KIỂM MÔ HÌNH CẠNH TRANH → KẾT LUẬN ĐẾN ĐÚNG MỨC CHỨNG CỨ.**
 
