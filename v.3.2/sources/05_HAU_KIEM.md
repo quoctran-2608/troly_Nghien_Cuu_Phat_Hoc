@@ -1,8 +1,8 @@
-# HẬU KIỂM HỌC THUẬT VÀ ĐẦU RA — v3.1 LEAN
+# HẬU KIỂM HỌC THUẬT VÀ ĐẦU RA — v3.2 LEAN
 
-**Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1d  
-**Dấu hiệu:** `PHAT-HOC-3.1-AUDIT`  
+**Phiên bản:** 3.2  
+**Bản chỉnh:** 3.2  
+**Dấu hiệu:** `PHAT-HOC-3.2-AUDIT`  
 **Vai trò:** Chạy sau khi nghiên cứu để phát hiện lỗi nguồn, logic, phạm vi và trình bày.  
 **Địa vị:** Quy trình nội bộ; không phải nguồn học thuật.
 
@@ -273,7 +273,8 @@ Nếu người dùng hỏi chính về phương pháp/cấu hình, mới đượ
 Trước khi gửi, quét đầu ra lần cuối. Nếu còn một trong các dấu hiệu dưới đây mà có thể loại bỏ an toàn, **chưa được gửi**:
 
 - HTML entity như `&#x20;`, `&nbsp;` hoặc `&#...;`;
-- chuỗi escape bị lộ như `\\n`, backslash thừa hoặc escape Markdown lỗi;
+- chuỗi escape bị lộ như `\\
+`, backslash thừa hoặc escape Markdown lỗi;
 - placeholder hoặc ký hiệu nội bộ;
 - tham số tracking trong URL như `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`, đặc biệt `utm_source=chatgpt.com`, khi URL đích vẫn hoạt động nếu bỏ;
 - heading/bảng hỏng;
@@ -281,7 +282,8 @@ Trước khi gửi, quét đầu ra lần cuối. Nếu còn một trong các d�
 
 Thực hiện một **literal scan** đơn giản trong đầu ra cuối với các tín hiệu như:
 
-`utm_` · `&#` · `&nbsp;` · `\\n`
+`utm_` · `&#` · `&nbsp;` · `\\
+`
 
 Nếu còn, dọn trước khi gửi.
 
@@ -318,7 +320,7 @@ Nếu một câu trả lời quan trọng không qua 10 câu này, chưa nên g�
 
 ---
 
-# 17. CÔNG THỨC HẬU KIỂM v3.1
+# 17. CÔNG THỨC HẬU KIỂM v3.2
 
 > **KIỂM ĐÚNG ĐỐI TƯỢNG → KIỂM CHUỖI NGUỒN → KIỂM ĐÓNG NHÁNH → KIỂM MỨC TRUY CẬP → KIỂM LOCATOR/ĐỘC LẬP → KIỂM PHẢN CHỨNG → KIỂM SỨC MẠNH KẾT LUẬN → KIỂM GIỚI HẠN → HARD-BLOCKER SCAN → DỌN ĐẦU RA → GỬI.**
 
