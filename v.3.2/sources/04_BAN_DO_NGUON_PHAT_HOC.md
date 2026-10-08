@@ -1,8 +1,8 @@
-# BẢN ĐỒ NGUỒN PHẬT HỌC — v3.1 LEAN
+# BẢN ĐỒ NGUỒN PHẬT HỌC — v3.2 LEAN
 
-**Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1b  
-**Dấu hiệu:** `PHAT-HOC-3.1-MAP`  
+**Phiên bản:** 3.2  
+**Bản chỉnh:** 3.2  
+**Dấu hiệu:** `PHAT-HOC-3.2-MAP`  
 **Vai trò:** Bản đồ định tuyến corpus, ngôn ngữ, hạ tầng và tuyến học giới.  
 **Địa vị:** Công cụ tìm đường; không phải nguồn học thuật và không phải whitelist.
 
@@ -366,7 +366,7 @@ Không biến Source Map thành danh sách website “được phép tin”.
 
 ---
 
-# 18. CÔNG THỨC MAP v3.1
+# 18. CÔNG THỨC MAP v3.2
 
 > **XÁC ĐỊNH ĐỀ TÀI → CHỌN 1–3 VÙNG THẬT SỰ LIÊN QUAN → ƯU TIÊN HẠ TẦNG CHUYÊN NGÀNH → MỞ CORPUS/NGÔN NGỮ/HỌC GIỚI/NGÀNH CHUYÊN MÔN CẦN THIẾT → TÌM ITEM → TRUY NGUỒN GỐC KHI MỆNH ĐỀ QUAN TRỌNG → THẨM ĐỊNH ITEM BẰNG `02_NGUON_VA_CHUNG_CU.md`.**
 
