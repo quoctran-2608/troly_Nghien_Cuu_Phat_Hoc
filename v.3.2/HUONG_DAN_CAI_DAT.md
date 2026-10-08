@@ -1,13 +1,13 @@
-# HƯỚNG DẪN CÀI ĐẶT CHATGPT PROJECT — PHAT-HOC v3.1 LEAN
+# HƯỚNG DẪN CÀI ĐẶT CHATGPT PROJECT — PHAT-HOC v3.2 LEAN
 
-**Phiên bản:** 3.1  
-**Mục tiêu:** Cài một trợ lý nghiên cứu Phật học dùng ít tệp, prompt ngắn và ưu tiên chiều sâu nghiên cứu hơn việc tuân thủ checklist dày đặc.
+**Phiên bản:** 3.2  
+**Mục tiêu:** Cài một trợ lý nghiên cứu Phật học dùng ít tệp, mặc định nghiên cứu học thuật sâu, truy nguồn trực tiếp khi cần, không lấy một hệ kinh điển hay một ngôn ngữ học thuật làm chuẩn mặc định.
 
 ---
 
 # 1. TRIẾT LÝ CÀI ĐẶT
 
-v3.1 dùng kiến trúc:
+v3.2 dùng kiến trúc:
 
 > **PROJECT INSTRUCTIONS NGẮN + 5 TỆP NGUỒN PHƯƠNG PHÁP**
 
@@ -17,21 +17,27 @@ Công thức vận hành:
 
 > **NGHIÊN CỨU TRƯỚC → HẬU KIỂM SAU**
 
+v3.2 kế thừa nền v3.1 đã qua nhiều stress test, đồng thời tăng cường nguyên tắc:
+
+> **KHÔNG CÓ KINH ĐIỂN, TRUYỀN THỐNG HAY NGÔN NGỮ HỌC THUẬT MẶC ĐỊNH.**
+
+Nghĩa là không lấy Pāli/Theravāda làm đại diện mặc định cho toàn bộ Phật giáo, và cũng không coi scholarship tiếng Anh là đại diện mặc định cho toàn bộ học giới quốc tế.
+
 ---
 
 # 2. NÊN TẠO PROJECT TEST RIÊNG
 
 Trong giai đoạn kiểm thử, tạo một ChatGPT Project mới, ví dụ:
 
-`Trợ lý — NGHIÊN CỨU PHẬT HỌC v3.1 TEST`
+`Trợ lý — NGHIÊN CỨU PHẬT HỌC v3.2 TEST`
 
-Không trộn v2, v3 và v3.1 trong cùng Project thử nghiệm. Giữ các Project cũ để A/B/C test.
+Không trộn v3.1 và v3.2 trong cùng Project thử nghiệm. Giữ Project v3.1 làm benchmark để A/B test khi cần.
 
 ---
 
 # 3. CHỈ TẢI 5 TỆP SAU VÀO PROJECT SOURCES / FILES
 
-Từ thư mục `v.3.1/sources/`, tải đúng 5 tệp:
+Từ thư mục `v.3.2/sources/`, tải đúng 5 tệp:
 
 1. `01_NGHIEN_CUU_COT_LOI.md`
 2. `02_NGUON_VA_CHUNG_CU.md`
@@ -40,17 +46,17 @@ Từ thư mục `v.3.1/sources/`, tải đúng 5 tệp:
 5. `05_HAU_KIEM.md`
 
 Không tải vào Project nghiên cứu:
-- các file v1/v2/v3;
+- các file v1/v2/v3/v3.1;
 - file regression test hoặc rubric;
-- README/CHANGELOG;
+- README/CHANGELOG nếu có;
 - file Instructions như một Project Source nếu bạn đã dán nó vào ô Instructions.
 
 Năm marker nguồn phải là:
-- `PHAT-HOC-3.1-CORE`
-- `PHAT-HOC-3.1-SOURCE`
-- `PHAT-HOC-3.1-STRAT`
-- `PHAT-HOC-3.1-MAP`
-- `PHAT-HOC-3.1-AUDIT`
+- `PHAT-HOC-3.2-CORE`
+- `PHAT-HOC-3.2-SOURCE`
+- `PHAT-HOC-3.2-STRAT`
+- `PHAT-HOC-3.2-MAP`
+- `PHAT-HOC-3.2-AUDIT`
 
 ---
 
@@ -58,15 +64,15 @@ Năm marker nguồn phải là:
 
 Mở tệp:
 
-`HUONG_DAN_DU_AN_CHATGPT_PHAT_HOC_v3.1.txt`
+`HUONG_DAN_DU_AN_CHATGPT_PHAT_HOC_v3.2.txt`
 
 Sao chép toàn bộ nội dung và dán vào ô **Project Instructions / Hướng dẫn dự án**.
 
 Marker phải là:
 
-`PHAT-HOC-PROJECT-3.1-VI`
+`PHAT-HOC-PROJECT-3.2-VI`
 
-Bản Instructions này dài khoảng 3.120 ký tự, chủ động thấp hơn nhiều so với giới hạn 8.000 ký tự của cấu hình mục tiêu. Không tự thêm lại các checklist dài của v3 trong lần test đầu.
+Không tự thêm lại các checklist dài của v3 hoặc ghép Instructions của v3.1 vào cùng Project, vì điều đó làm sai phép test và có thể tăng compliance tax.
 
 ---
 
@@ -101,41 +107,51 @@ Sau khi tải 5 file và dán Instructions, mở một chat mới trong Project 
 
 Kết quả mong đợi:
 
-- `PHAT-HOC-PROJECT-3.1-VI`
-- `PHAT-HOC-3.1-CORE`
-- `PHAT-HOC-3.1-SOURCE`
-- `PHAT-HOC-3.1-STRAT`
-- `PHAT-HOC-3.1-MAP`
-- `PHAT-HOC-3.1-AUDIT`
+- `PHAT-HOC-PROJECT-3.2-VI`
+- `PHAT-HOC-3.2-CORE`
+- `PHAT-HOC-3.2-SOURCE`
+- `PHAT-HOC-3.2-STRAT`
+- `PHAT-HOC-3.2-MAP`
+- `PHAT-HOC-3.2-AUDIT`
 
 Test marker chỉ kiểm việc Project truy cập được file. Nó không chứng minh chất lượng nghiên cứu.
 
 ---
 
-# 7. TEST QUAN TRỌNG NHẤT SAU KHI CÀI
+# 7. TEST NEO SAU KHI CÀI
 
-Chạy trong một chat mới:
+Có thể bắt đầu bằng các prompt đã dùng để kiểm v3.1:
 
-> `Phạm Võng kinh có cổ không?`
+> `DN 1 có phải toàn bộ đều là kinh rất sớm không? Hãy phân tầng niên đại nếu có thể.`
 
-Mục tiêu của v3.1 là đồng thời đạt hai điều:
+> `Duy thức có thật sự nói “chỉ có tâm tồn tại, thế giới bên ngoài không tồn tại” không?`
 
-1. xử lý mơ hồ tốt như v3: phân biệt DN 1 và T1484 sớm;
-2. đào nguồn sâu ít nhất ngang v2: nếu mệnh đề trung tâm dựa vào Groner, Funayama, Anālayo hoặc một công trình chuyên ngành khác, phải cố truy tới công trình gốc/nguồn trực tiếp khi có thể thay vì dừng ở trang tổng hợp.
+Mục tiêu là bảo đảm v3.2 giữ được các ưu điểm của v3.1:
+- mặc định nghiên cứu sâu;
+- truy nguồn trực tiếp khi claim quyết định;
+- phân tầng văn bản chặt;
+- không phá phạm vi đóng;
+- không lấy Pāli làm chuẩn chung;
+- không để nguồn trung gian gánh nhiều nhánh quyết định.
 
-Đây là test neo chính để kiểm kiến trúc Lean có thành công hay không.
+Sau đó test riêng năng lực mới của v3.2 bằng các prompt đòi hỏi scholarship đa ngôn ngữ/đa truyền thống nghiên cứu, ví dụ:
+
+> `Khi so sánh anattā với ātman của Bṛhadāraṇyaka và Chāndogya Upaniṣad, các chuyên gia Veda/Upaniṣad — không chỉ Buddhist Studies — hiểu ātman trong các văn bản đó như thế nào?`
+
+> `Hãy nghiên cứu T1484 và chủ động kiểm scholarship Nhật Bản và Trung Quốc/Đài Loan, không chỉ công trình tiếng Anh.`
 
 ---
 
-# 8. A/B/C TEST v2 — v3 — v3.1
+# 8. A/B TEST v3.1 — v3.2
 
 Để so sánh công bằng:
 
 1. dùng cùng một câu hỏi;
 2. mở chat mới ở mỗi Project;
-3. không thêm prompt phụ;
-4. lưu nguyên câu trả lời;
-5. so sánh ít nhất các trục:
+3. dùng cùng model/settings nếu có thể;
+4. không thêm prompt phụ ngoài câu test;
+5. lưu nguyên câu trả lời;
+6. so sánh ít nhất các trục:
    - xử lý mơ hồ;
    - chiều sâu truy nguồn;
    - tỷ lệ nguồn trực tiếp so với nguồn discovery;
@@ -143,8 +159,10 @@ Mục tiêu của v3.1 là đồng thời đạt hai điều:
    - phản chứng;
    - phân tầng văn bản;
    - mức chắc chắn;
-   - độ tự nhiên và gọn;
-   - lỗi kỹ thuật đầu ra.
+   - độ bao phủ corpus;
+   - độ bao phủ học giới/ngôn ngữ;
+   - khả năng mở sang ngành chuyên môn ngoài Buddhist Studies khi cần;
+   - độ tự nhiên và sạch đầu ra.
 
 Không kết luận từ một lượt duy nhất nếu khác biệt nhỏ. Nếu cùng một pattern lặp qua nhiều câu hỏi, mới xem đó là đặc tính kiến trúc.
 
@@ -157,13 +175,14 @@ Không kết luận từ một lượt duy nhất nếu khác biệt nhỏ. Nế
 Nếu đề tài chưa được bao phủ rõ:
 - không ép vào mục gần nhất;
 - dùng lõi + quy chuẩn nguồn để tự dựng phạm vi;
-- tìm nguồn ngoài Map nếu phù hợp.
+- tìm nguồn ngoài Map nếu phù hợp;
+- mở sang ngành chuyên môn liên quan nếu chính câu hỏi đòi hỏi.
 
 Không cần tạo thêm module chỉ để xử lý một ca đơn lẻ.
 
 ---
 
-# 10. KHI CẬP NHẬT v3.1
+# 10. KHI CẬP NHẬT v3.2
 
 Ưu tiên sửa **ít và đúng chỗ**.
 
@@ -179,10 +198,10 @@ Nếu một lỗi lặp lại qua nhiều regression test, mới cân nhắc tha
 
 # 11. TRẠNG THÁI PHIÊN BẢN
 
-v3.1 chưa phải bản ổn định cho đến khi hoàn tất A/B/C test và regression test.
+v3.2 chưa phải bản ổn định cho đến khi hoàn tất test riêng của nhánh 3.2.
 
 Quy trình khuyến nghị:
 
-> `phat-hoc-v3.1-development` → Project v3.1 TEST → A/B/C test → sửa lỗi → regression → duyệt → release.
+> `phat-hoc-v3.2-development` → Project v3.2 TEST → A/B với v3.1 → stress test đa học giới/ngôn ngữ → sửa lỗi nếu cần → regression → duyệt → release.
 
 Không merge vào `main` trước khi có phê duyệt cuối.
