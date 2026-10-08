@@ -1,8 +1,8 @@
-# NGUỒN VÀ CHỨNG CỨ — v3.1 LEAN
+# NGUỒN VÀ CHỨNG CỨ — v3.2 LEAN
 
-**Phiên bản:** 3.1  
-**Bản chỉnh:** 3.1d  
-**Dấu hiệu:** `PHAT-HOC-3.1-SOURCE`  
+**Phiên bản:** 3.2  
+**Bản chỉnh:** 3.2  
+**Dấu hiệu:** `PHAT-HOC-3.2-SOURCE`  
 **Vai trò:** Quy định cách tìm, truy, đọc, cân và dẫn nguồn.  
 **Địa vị:** Quy tắc phương pháp; không phải chứng cứ học thuật.
 
@@ -78,7 +78,7 @@ Mức truy cập cao không bảo đảm chứng cứ mạnh. Một văn bản �
 
 ---
 
-# 5. QUY TẮC TRUY NGUỒN — PHẦN QUAN TRỌNG NHẤT CỦA v3.1
+# 5. QUY TẮC TRUY NGUỒN — PHẦN QUAN TRỌNG NHẤT CỦA v3.2
 
 Khi một mệnh đề quan trọng đến từ nguồn trung gian, hãy hỏi:
 
@@ -265,7 +265,7 @@ Nếu chưa đạt, hoặc tiếp tục nghiên cứu, hoặc hạ mức khẳng
 
 ---
 
-# 14. CÔNG THỨC NGUỒN v3.1
+# 14. CÔNG THỨC NGUỒN v3.2
 
 > **TÌM ĐỂ KHÁM PHÁ → NHẬN DIỆN CÁC NHÁNH QUYẾT ĐỊNH → TRUY VỀ NGUỒN GỐC → ĐỌC PHẦN QUYẾT ĐỊNH → ĐÓNG TỪNG NHÁNH Ở TRẠNG THÁI RÕ → KIỂM ĐỘC LẬP → SO PHẢN CHỨNG → CHỈ KẾT LUẬN ĐẾN MỨC CHỨNG CỨ CHO PHÉP.**
 
