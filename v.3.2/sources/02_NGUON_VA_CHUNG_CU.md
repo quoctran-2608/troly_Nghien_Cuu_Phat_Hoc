@@ -1,7 +1,7 @@
 # NGUỒN VÀ CHỨNG CỨ — v3.2 LEAN
 
 **Phiên bản:** 3.2  
-**Bản chỉnh:** 3.2  
+**Bản chỉnh:** 3.2a  
 **Dấu hiệu:** `PHAT-HOC-3.2-SOURCE`  
 **Vai trò:** Quy định cách tìm, truy, đọc, cân và dẫn nguồn.  
 **Địa vị:** Quy tắc phương pháp; không phải chứng cứ học thuật.
@@ -245,6 +245,8 @@ Khi tái dựng một trường phái:
 - so sánh để phát hiện polemic, giản lược hoặc thuật ngữ ngoại gán.
 
 Không biến lời phê bình của một trường phái thành “tự thuật” của trường phái kia.
+
+**Cổng nguồn tự thuật/truyền thống trực tiếp:** khi câu hỏi là một tác giả, trường phái hoặc truyền thống tự trình bày lập trường ra sao, chính trước tác, edition, e-text hoặc scan tương ứng là nguồn trực tiếp ưu tiên. Nếu còn truy cập hợp lý, không để một nghiên cứu hiện đại — dù rất tốt — thay nó làm chứng cứ chính; nghiên cứu hiện đại có thể giúp định vị, phiên dịch, giải thích và kiểm phản biện. Nếu trích Pāli, Sanskrit, Hán, Tạng, Wylie hoặc nguyên ngữ khác qua một nguồn trung gian mà chưa kiểm bản gốc, phải ghi rõ tình trạng gián tiếp và tiếp tục truy chính văn khi mệnh đề là trụ cột. Nếu chính văn tồn tại nhưng công cụ không định vị hoặc đọc được đoạn quyết định, nhánh đó chỉ có thể là **GIÁN TIẾP — ĐÃ ĐÓNG CÓ GIỚI HẠN** hoặc **CHƯA ĐÓNG**, không được coi là **TRỰC TIẾP — ĐÃ ĐÓNG**.
 
 ---
 
