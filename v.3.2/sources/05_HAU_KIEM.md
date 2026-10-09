@@ -1,7 +1,7 @@
 # HẬU KIỂM HỌC THUẬT VÀ ĐẦU RA — v3.2 LEAN
 
 **Phiên bản:** 3.2  
-**Bản chỉnh:** 3.2a  
+**Bản chỉnh:** 3.2b  
 **Dấu hiệu:** `PHAT-HOC-3.2-AUDIT`  
 **Vai trò:** Chạy sau khi nghiên cứu để phát hiện lỗi nguồn, logic, phạm vi và trình bày.  
 **Địa vị:** Quy trình nội bộ; không phải nguồn học thuật.
@@ -46,6 +46,7 @@ Kiểm:
 - tiếng Việt tự nhiên;
 - độ dài hợp lý;
 - thuật ngữ/nguyên ngữ nhất quán;
+- tên kinh/văn bản ở lần đầu vừa đọc được vừa tra được;
 - không lộ quy trình nội bộ;
 - không còn ký tự kỹ thuật hoặc tracking rác.
 
@@ -124,6 +125,7 @@ Nếu dùng mirror, kiểm nguồn gốc của text khi điều đó ảnh hư�
 
 Rà riêng:
 - số kinh;
+- tên tiếng Việt, tên nguyên ngữ và mã kinh/văn bản có khớp nhau không;
 - Taishō/Toh;
 - năm;
 - tên học giả;
@@ -239,6 +241,7 @@ Không gửi bản kết luận mạnh nếu còn một trong các lỗi sau:
 - nhiều nhánh quyết định bị “đóng giả” chỉ bằng cùng một aggregator mà không kiểm các item/công trình gốc khi khả thi;
 - chỉ có abstract/metadata/snippet nhưng viết như đã đọc lập luận;
 - locator hoặc bibliographic detail có dấu hiệu đoán;
+- lần đầu nhắc một kinh/văn bản chỉ bằng mã trần dù tên tiếng Việt và nguyên ngữ có thể xác định đáng tin cậy, hoặc tên Việt/nguyên ngữ không khớp mã định vị;
 - phạm vi đóng bị phá;
 - phản chứng mạnh làm sụp kết luận;
 - hai nguồn quyết định mâu thuẫn mà chưa xử lý;
@@ -257,13 +260,14 @@ Khi gặp hard blocker:
 # 13. BIÊN TẬP ĐẦU RA
 
 Sau khi học thuật đã sạch:
-
 - mở bằng câu trả lời trực tiếp;
 - ưu tiên cấu trúc tự nhiên hơn trình diễn phương pháp;
 - câu hỏi đơn giản trả lời gọn;
 - câu hỏi nghiên cứu sâu có thể dài nhưng không lặp;
 - giữ nguyên ngữ khi hữu ích cho kiểm chứng;
 - giải thích thuật ngữ khó ở lần đầu;
+- lần đầu nhắc một kinh/văn bản, nếu xác định được đáng tin cậy, ghi **tên tiếng Việt + tên nguyên ngữ + mã định vị chuẩn**; ví dụ: **Kinh Vô ngã tướng (Anattalakkhaṇa Sutta, SN 22.59)**; từ lần sau có thể rút gọn thành mã;
+- với Sanskrit, Hán và Tạng áp dụng cùng nguyên tắc theo corpus; nếu chưa có tên Việt ổn định, ghi “tạm dịch” hoặc giữ định danh đã xác minh, không tự bịa tên;
 - không chèn tên file phương pháp như citation học thuật;
 - không phô Stage, router, checklist hoặc điểm nội bộ.
 
@@ -313,7 +317,7 @@ Không cần hiển thị các nhãn này cho người dùng.
 3. Mệnh đề trung tâm có nguồn đủ gần không?
 4. Tôi có dừng quá sớm ở nguồn tổng hợp hoặc aggregator không?
 5. Tôi có giả mức truy cập hoặc gán lời học giả/tác giả/truyền thống mạnh hơn nguồn cho phép không?
-6. Citation/locator có thật và hỗ trợ đúng câu không?
+6. Citation/locator có thật, hỗ trợ đúng câu, và tên kinh lần đầu đã có tên Việt + nguyên ngữ + mã khi xác định được chưa?
 7. Các nguồn chính có thật sự độc lập và phản chứng quan trọng đã được xét chưa?
 8. Câu chữ có mạnh hơn chứng cứ hoặc độ bao phủ không?
 9. Có giới hạn nào cần nói với người dùng không?
