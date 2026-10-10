@@ -113,18 +113,43 @@ Nếu một câu hỏi có giới hạn phạm vi rõ ràng do người dùng đ
 
 ---
 
-# 7. CHAT MỚI VÀ PROJECT KNOWLEDGE
+# 7. CHAT MỚI, PROJECT KNOWLEDGE VÀ MEMORY
 
 Khi benchmark, nên mở **chat mới trong cùng Project** cho mỗi prompt độc lập.
 
 Lý do:
 
 - Project Knowledge và Project Instructions vẫn được dùng;
-- nội dung hội thoại cũ không nên trở thành dữ kiện mặc định cho bài test mới;
-- giảm hiệu ứng neo từ câu trả lời trước;
+- giảm hiệu ứng neo trực tiếp từ câu trả lời ngay trước đó;
 - dễ so sánh Claude với ChatGPT trên cùng một prompt sạch.
 
-Thông tin muốn Claude luôn dùng giữa nhiều chat phải nằm trong **Project Knowledge** hoặc **Project Instructions**, không nên chỉ để trong một chat cũ.
+Thông tin mang tính quy chuẩn mà Claude phải luôn dùng giữa nhiều chat phải nằm trong **Project Knowledge** hoặc **Project Instructions**, không nên chỉ để trong một chat cũ hay chỉ trông chờ vào Memory.
+
+## Cấu hình Memory khuyến nghị
+
+Với Project Phật học này, nên dùng cấu hình:
+
+- **Project memory:** để hoạt động bình thường để Claude có thể tích lũy ngữ cảnh riêng của Project qua các phiên làm việc;
+- **Use account memory:** **OFF** để tránh trộn thông tin từ các chat ngoài Project hoặc các Project khác vào trợ lý nghiên cứu Phật học;
+- nếu Project mới hiển thị `No memory yet`, đó là trạng thái bình thường; Project memory có thể xuất hiện sau khi đã có một số phiên làm việc;
+- **không dùng Memory thay cho Project Knowledge hoặc Project Instructions**. Năm tệp `01`–`05` và Instructions vẫn là nền cố định của hệ.
+
+Cấu hình mục tiêu:
+
+```text
+Project memory:      ON / hoạt động bình thường
+Use account memory:  OFF
+```
+
+### Khi benchmark A/B nghiêm
+
+Memory có thể làm bài test sau chịu ảnh hưởng gián tiếp từ những phiên trước trong cùng Project. Vì vậy:
+
+- ưu tiên mở chat mới cho mỗi prompt;
+- nếu giao diện cho phép tắt Memory riêng cho một chat trước khi bắt đầu và cần một phép thử hoàn toàn cô lập, có thể tắt Memory cho chat benchmark đó;
+- nếu không có tùy chọn tắt riêng, ghi nhận rằng Project memory có thể là một biến phụ khi diễn giải kết quả A/B.
+
+Trong sử dụng hằng ngày, không cần tắt Project memory; lợi ích duy trì ngữ cảnh của Project thường hữu ích hơn việc cô lập tuyệt đối từng cuộc chat.
 
 ---
 
@@ -203,7 +228,8 @@ Không:
 - bắt Claude làm bibliography trước khi nghiên cứu xong;
 - sửa lõi sau từng lỗi đơn lẻ;
 - coi snippet, metadata hoặc abstract là đã đọc toàn văn;
-- coi một trang tổng hợp là nhiều nhánh chứng cứ độc lập.
+- coi một trang tổng hợp là nhiều nhánh chứng cứ độc lập;
+- bật **Use account memory** chỉ để mong Claude “nhớ nhiều hơn” cho Project nghiên cứu này.
 
 ---
 
@@ -216,7 +242,8 @@ Trước khi sửa file lõi, kiểm theo thứ tự:
 3. Research/Web search có hoạt động không;
 4. model và mức suy luận có đủ mạnh không;
 5. prompt đang chạy trong đúng Project không;
-6. lỗi có lặp lại ở nhiều prompt không.
+6. Memory có đang đưa ngữ cảnh ngoài mong muốn vào phép benchmark không;
+7. lỗi có lặp lại ở nhiều prompt không.
 
 Chỉ sau khi các điều trên đều ổn mà lỗi vẫn lặp lại mới tạo một chỉnh sửa riêng cho Claude.
 
@@ -242,6 +269,10 @@ CLAUDE PROJECT
 │   ├── 04_BAN_DO_NGUON_PHAT_HOC.md
 │   └── 05_HAU_KIEM.md
 │
+├── Memory
+│   ├── Project memory: hoạt động bình thường
+│   └── Use account memory: OFF
+│
 └── Khi nghiên cứu
     ├── Research / Web search khi cần
     ├── model mạnh và ổn định
@@ -262,6 +293,8 @@ Giao diện và tên nút của Claude có thể thay đổi theo phiên bản h
 
 - **Project instructions** = nơi đặt luật điều khiển hành vi;
 - **Project knowledge/context** = nơi đặt 5 tệp `01`–`05`;
+- **Project memory** = bộ nhớ phát triển trong phạm vi Project;
+- **Use account memory** = cầu nối bộ nhớ giữa Project và các chat ngoài Project; với cấu hình này nên để **OFF**;
 - **Research/Web search** = công cụ lấy nguồn bên ngoài khi câu hỏi cần nghiên cứu mở.
 
-Theo tài liệu hỗ trợ Claude hiện hành, Project Knowledge được dùng xuyên các chat trong cùng Project; Project Instructions áp dụng cho các chat của Project; nội dung chat cũ không tự động trở thành Project Knowledge nếu chưa được thêm vào đó.
+Project Knowledge và Project Instructions là nền cố định. Memory chỉ là lớp hỗ trợ liên tục giữa các phiên, không thay thế bộ quy tắc hoặc nguồn phương pháp của Project.
