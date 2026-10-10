@@ -99,7 +99,7 @@ Một truyền thống có thể là:
 
 Vai trò của nguồn luôn **tương đối với câu hỏi hiện tại**.
 
-Ví dụ: Buddhaghosa là nguồn hậu kỳ nếu hỏi về Phật giáo thời kỳ đầu, nhưng là nguồn trực tiếp nếu hỏi “Buddhaghosa hiểu *anattā* thế nào?”.
+Ví dụ: Buddhaghosa là nguồn hậu kỳ nếu hỏi về Phật giáo thời kỳ đầu, nhưng là nguồn trực tiếp nếu hỏi “Buddhaghosa hiểu vấn đề này thế nào?”.
 
 ---
 
