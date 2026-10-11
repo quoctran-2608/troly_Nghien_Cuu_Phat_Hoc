@@ -23,7 +23,7 @@ Setup-for-claude/
 
 - Năm tệp `sources/01`–`05` là bản sao nguyên vẹn của lõi v3.2.2; không chỉnh riêng cho Claude.
 - Tệp `HUONG_DAN_DU_AN_CLAUDE_PHAT_HOC_v3.2.2.txt` là Project Instructions đã ghép sẵn lớp điều phối dành cho Claude với lõi Instructions v3.2.2.
-- Các bổ sung Claude chỉ nhằm hai việc đã thấy lặp qua benchmark: **ưu tiên đóng nguồn trực tiếp cho mệnh đề trụ cột** và **không để câu kết luận mạnh hơn phạm vi chứng cứ thực sự đã kiểm**.
+- Các bổ sung Claude gồm **hai điều chỉnh học thuật** đã thấy lặp qua benchmark: **ưu tiên đóng nguồn trực tiếp cho mệnh đề trụ cột** và **không để câu kết luận mạnh hơn phạm vi chứng cứ thực sự đã kiểm**; cùng **một lan can đầu ra**: hậu kiểm chủ yếu phải sửa sản phẩm cuối, không biến checklist/trạng thái nội bộ thành phần trình diễn cho người dùng.
 - Không thêm quota nguồn, không ép trả lời ngắn, không làm yếu ưu thế nghiên cứu rộng và sâu của Claude.
 
 ## Cài nhanh
@@ -31,7 +31,7 @@ Setup-for-claude/
 1. Tạo Claude Project mới.
 2. Tải 5 tệp trong `sources/` vào Project Knowledge/Context.
 3. Dán toàn bộ `HUONG_DAN_DU_AN_CLAUDE_PHAT_HOC_v3.2.2.txt` vào Project Instructions.
-4. Để Project memory hoạt động bình thường; đặt **Use account memory = OFF**.
+4. Để Project memory hoạt động bình thường (không nhất thiết giao diện có một nút `ON` riêng); đặt **Use account memory = OFF**.
 5. Bật Research/Web search khi làm câu hỏi nghiên cứu mở nếu tài khoản có hỗ trợ.
 
 Xem `HUONG_DAN_CAI_DAT_CLAUDE_PROJECT.md` để cài chi tiết và benchmark.
