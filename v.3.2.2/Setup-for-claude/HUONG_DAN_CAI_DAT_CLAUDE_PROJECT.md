@@ -81,9 +81,11 @@ Người dùng vẫn chỉ cần hỏi tự nhiên; không cần lặp “hãy r
 Cấu hình khuyến nghị:
 
 ```text
-Project memory:      ON / hoạt động bình thường
+Project memory:      để hoạt động bình thường
 Use account memory:  OFF
 ```
+
+Ý của dòng `Project memory` ở đây là **để cơ chế nhớ trong phạm vi Project hoạt động bình thường**; không nhất thiết mọi giao diện/tài khoản đều hiển thị một công tắc `ON` riêng cho mục này. Không cần đi tìm hoặc bật một nút không xuất hiện trong giao diện của bạn.
 
 Lý do: giữ tính liên tục riêng của Project nhưng tránh trộn các chat ngoài Project vào trợ lý nghiên cứu.
 
@@ -185,7 +187,7 @@ CLAUDE PROJECT
 │   └── 05_HAU_KIEM.md
 │
 ├── Memory
-│   ├── Project memory: ON
+│   ├── Project memory: hoạt động bình thường
 │   └── Use account memory: OFF
 │
 └── Khi nghiên cứu
