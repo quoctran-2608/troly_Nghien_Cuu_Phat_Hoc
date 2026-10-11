@@ -78,22 +78,38 @@ Người dùng vẫn chỉ cần hỏi tự nhiên; không cần lặp “hãy r
 
 # 5. MEMORY
 
-Cấu hình khuyến nghị:
+## 5.1. Hiểu đúng ba lớp Memory
+
+Với Claude Project, cần phân biệt rõ:
+
+1. **Memory của Claude ở cấp tài khoản:** tính năng Memory tổng thể phải đang hoạt động để Claude có thể sử dụng cơ chế nhớ.
+2. **Project memory:** vùng nhớ riêng của Project hiện tại. Trong giao diện Project, mở **Memory → View** để xem nội dung vùng nhớ này khi đã hình thành. Project memory tách biệt với các Project khác và với chat ngoài Project, trừ khi người dùng cho phép nối account memory.
+3. **Use account memory:** công tắc quyết định Project này có được dùng/chia sẻ memory với các chat ngoài Project hay không. Đây **không phải** công tắc bật/tắt Project memory.
+
+Cấu hình khuyến nghị cho Project Phật học này:
 
 ```text
-Project memory:      để hoạt động bình thường
+Memory của Claude:   bật / đang hoạt động
+Project memory:      riêng cho Project; xem tại Memory → View
 Use account memory:  OFF
 ```
 
-Ý của dòng `Project memory` ở đây là **để cơ chế nhớ trong phạm vi Project hoạt động bình thường**; không nhất thiết mọi giao diện/tài khoản đều hiển thị một công tắc `ON` riêng cho mục này. Không cần đi tìm hoặc bật một nút không xuất hiện trong giao diện của bạn.
+Với cấu hình này:
 
-Lý do: giữ tính liên tục riêng của Project nhưng tránh trộn các chat ngoài Project vào trợ lý nghiên cứu.
+- Claude vẫn duy trì **Project memory riêng** cho trợ lý nghiên cứu Phật học;
+- **Use account memory = OFF** giúp tránh đưa memory từ các chat ngoài Project vào đây;
+- nếu cửa sổ Memory hiện `No memory yet`, điều đó chỉ có nghĩa Project chưa tích lũy đủ memory để hiển thị; **không có nghĩa Project memory đang bị tắt**;
+- Project memory không thay thế Project Knowledge hay Project Instructions. Năm tệp `01`–`05` và Instructions vẫn là nền phương pháp cố định của hệ.
 
-`No memory yet` ở Project mới là bình thường.
+## 5.2. Khi benchmark A/B nghiêm
 
-Memory không thay thế Project Knowledge hay Project Instructions.
+Để giảm ảnh hưởng giữa các phép thử:
 
-Khi benchmark A/B nghiêm, mở chat mới cho mỗi prompt. Nếu giao diện cho phép tắt Memory riêng cho một chat và cần phép thử hoàn toàn cô lập, có thể tắt cho chat benchmark đó.
+- mở **chat mới** cho mỗi prompt độc lập;
+- nếu cần cô lập tuyệt đối một phép thử và giao diện cho phép, mở chat mới rồi tắt **Memory** cho chính chat đó **trước khi gửi tin nhắn đầu tiên**;
+- không bật `Use account memory` chỉ để mong Claude “nhớ nhiều hơn”, vì điều đó đưa thêm biến từ các chat ngoài Project vào benchmark.
+
+Trong sử dụng hằng ngày, giữ Project memory riêng của Project hoạt động là phù hợp; chỉ cần để **Use account memory = OFF** theo cấu hình trên.
 
 ---
 
@@ -187,7 +203,8 @@ CLAUDE PROJECT
 │   └── 05_HAU_KIEM.md
 │
 ├── Memory
-│   ├── Project memory: hoạt động bình thường
+│   ├── Memory của Claude: bật / đang hoạt động
+│   ├── Project memory: riêng cho Project; xem tại Memory → View
 │   └── Use account memory: OFF
 │
 └── Khi nghiên cứu
