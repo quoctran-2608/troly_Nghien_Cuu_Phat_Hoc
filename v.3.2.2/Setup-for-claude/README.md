@@ -31,7 +31,7 @@ Setup-for-claude/
 1. Tạo Claude Project mới.
 2. Tải 5 tệp trong `sources/` vào Project Knowledge/Context.
 3. Dán toàn bộ `HUONG_DAN_DU_AN_CLAUDE_PHAT_HOC_v3.2.2.txt` vào Project Instructions.
-4. Để Project memory hoạt động bình thường (không nhất thiết giao diện có một nút `ON` riêng); đặt **Use account memory = OFF**.
+4. Bảo đảm tính năng Memory của Claude đang hoạt động; trong Project mở **Memory → View** để xem Project memory. Project memory được duy trì riêng cho Project; đặt **Use account memory = OFF** để không nối vùng nhớ này với các chat ngoài Project. Dòng `No memory yet` chỉ có nghĩa Project chưa tích lũy đủ memory.
 5. Bật Research/Web search khi làm câu hỏi nghiên cứu mở nếu tài khoản có hỗ trợ.
 
 Xem `HUONG_DAN_CAI_DAT_CLAUDE_PROJECT.md` để cài chi tiết và benchmark.
