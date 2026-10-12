@@ -80,6 +80,41 @@ Người dùng vẫn chỉ cần hỏi tự nhiên; không cần lặp “hãy r
 
 Tên model và giao diện Claude có thể thay đổi. Vì vậy ưu tiên nguyên tắc **model mạnh nhất phù hợp → effort đủ cao → Research + Web search cho câu hỏi mở**, thay vì khóa vĩnh viễn vào một tên model.
 
+### CHỌN NHANH MỘT TRONG HAI OPTION
+
+#### OPTION A — MẠNH NHẤT / MAX QUALITY
+
+Dùng khi mục tiêu là **chất lượng nghiên cứu cao nhất có thể**, đặc biệt cho benchmark, tác quyền, niên đại, phân tầng văn bản, so sánh triết học khó hoặc tranh luận học giới phức tạp.
+
+```text
+Model:             model top-tier mạnh nhất đã benchmark tốt nhất
+                   (hiện có thể dùng Opus 5.5; nếu có Fable 5.1 thì so cùng prompt)
+Effort:            Max
+Research:          ON
+Web search:        ON / khả dụng
+Thinking:          dùng cơ chế Thinking hiện hành của model; không cần bật thêm nếu model đã tự dùng
+Permission mode:   Auto nếu chỉ đọc/tìm kiếm và muốn giảm ngắt quãng
+                   Manual nếu có công cụ có thể ghi/xóa hoặc tạo hành động có hậu quả
+Memory:            theo cấu hình ở mục 5
+```
+
+Đây là **option ưu tiên chất lượng hơn tốc độ và mức tiêu thụ**. Nếu đang đánh giá năng lực tối đa của Project, dùng option này và giữ nguyên cấu hình cho toàn bộ loạt benchmark.
+
+#### OPTION B — NGHIÊN CỨU HẰNG NGÀY / CÂN BẰNG
+
+Dùng khi muốn giữ chất lượng nghiên cứu rất cao nhưng tiết kiệm thời gian và giới hạn sử dụng hơn.
+
+```text
+Model:             model top-tier đã chọn làm mặc định
+Effort:            High
+Research:          ON khi câu hỏi cần nghiên cứu mở
+Web search:        khả dụng
+Permission mode:   Auto hoặc Manual tùy quyền của công cụ đang nối
+Memory:            theo cấu hình ở mục 5
+```
+
+Nếu không có lý do đặc biệt để tiết kiệm thời gian/usage và câu hỏi thực sự quan trọng, ưu tiên **OPTION A — MẠNH NHẤT**.
+
 Tại thời điểm cập nhật **10/2026**, cấu hình khuyến nghị cho Project này là:
 
 ```text
@@ -121,9 +156,9 @@ Nếu giao diện hiển thị `Auto` cạnh model/effort, cần hiểu đúng: 
 - `Auto` **không làm model thông minh hơn** và không thay thế `High/Max` hay `Research`.
 - Nếu đã nối các công cụ có khả năng gửi, ghi, sửa hoặc xóa dữ liệu bên ngoài, nên cân nhắc **Manual** để tự duyệt hành động.
 
-### Hai cấu hình thực tế nên dùng
+### Tóm tắt lại hai option
 
-**Nghiên cứu tối đa / benchmark khó:**
+**OPTION A — Mạnh nhất / benchmark khó:**
 
 ```text
 Opus 5.5 (hoặc model top-tier đã benchmark tốt hơn)
@@ -133,7 +168,7 @@ Opus 5.5 (hoặc model top-tier đã benchmark tốt hơn)
 + Auto nếu chỉ đọc/tìm kiếm và muốn giảm ngắt quãng
 ```
 
-**Nghiên cứu hằng ngày:**
+**OPTION B — Nghiên cứu hằng ngày:**
 
 ```text
 Opus 5.5 (hoặc model top-tier đã chọn)
@@ -188,7 +223,7 @@ Trong sử dụng hằng ngày, giữ Project memory riêng của Project hoạt
 Khi so với ChatGPT:
 
 - dùng model Claude mạnh nhất mà tài khoản cho phép và đã chọn trước khi bắt đầu loạt test;
-- với phép thử năng lực tối đa, ưu tiên **Max**; nếu so ở chế độ sử dụng thường ngày, dùng **High**;
+- với phép thử năng lực tối đa, ưu tiên **OPTION A / Max**; nếu so ở chế độ sử dụng thường ngày, dùng **OPTION B / High**;
 - giữ nguyên model, effort, trạng thái Research và các điều kiện công cụ cho toàn bộ một loạt test;
 - dùng cùng prompt;
 - mở chat mới cho mỗi test độc lập;
@@ -280,10 +315,8 @@ CLAUDE PROJECT
 │   └── Use account memory: OFF
 │
 └── Khi nghiên cứu
-    ├── Model: Opus 5.5 hoặc model top-tier đã benchmark tốt hơn
-    ├── Effort: Max cho bài khó/benchmark; High cho hằng ngày
-    ├── Research: ON khi nghiên cứu mở
-    ├── Web search: khả dụng
+    ├── OPTION A — Mạnh nhất: model top-tier + Max + Research ON + Web search
+    ├── OPTION B — Hằng ngày: model top-tier + High + Research khi cần
     ├── Auto: tùy quyền hành động; không phải mức suy luận
     └── chat mới cho benchmark độc lập
 ```
