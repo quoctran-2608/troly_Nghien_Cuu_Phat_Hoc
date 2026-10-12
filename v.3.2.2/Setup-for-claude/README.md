@@ -32,6 +32,11 @@ Setup-for-claude/
 2. Tải 5 tệp trong `sources/` vào Project Knowledge/Context.
 3. Dán toàn bộ `HUONG_DAN_DU_AN_CLAUDE_PHAT_HOC_v3.2.2.txt` vào Project Instructions.
 4. Bảo đảm tính năng Memory của Claude đang hoạt động; trong Project mở **Memory → View** để xem Project memory. Project memory được duy trì riêng cho Project; đặt **Use account memory = OFF** để không nối vùng nhớ này với các chat ngoài Project. Dòng `No memory yet` chỉ có nghĩa Project chưa tích lũy đủ memory.
-5. Với nghiên cứu mở, bật **Research** và bảo đảm **Web search** khả dụng. Để đo năng lực tối đa, dùng **Opus 5.5 hoặc model top-tier đã benchmark tốt hơn + Max**; dùng **High** cho nghiên cứu hằng ngày. `Auto` là chế độ quyền hành động, không phải mức suy luận; có thể để Auto cho tác vụ chỉ đọc/tìm kiếm để giảm ngắt quãng, nhưng dùng Manual khi có công cụ có thể ghi/xóa hay tạo hành động có hậu quả.
+5. Với nghiên cứu mở, bật **Research** và bảo đảm **Web search** khả dụng. Sau đó chọn một trong hai option:
+   - **OPTION A — MẠNH NHẤT:** model top-tier đã benchmark tốt nhất + **Max** + **Research ON** + Web search; dùng khi cần chất lượng tối đa hoặc benchmark khó.
+   - **OPTION B — HẰNG NGÀY:** model top-tier đã chọn + **High** + Research khi câu hỏi cần nghiên cứu mở; dùng để cân bằng chất lượng, tốc độ và usage.
+   `Auto` là chế độ quyền hành động, không phải mức suy luận; có thể để Auto cho tác vụ chỉ đọc/tìm kiếm để giảm ngắt quãng, nhưng dùng Manual khi có công cụ có thể ghi/xóa hay tạo hành động có hậu quả.
+
+Nếu không có lý do đặc biệt để tiết kiệm thời gian/usage và câu hỏi thực sự quan trọng, ưu tiên **OPTION A — MẠNH NHẤT**.
 
 Tên model và giao diện Claude có thể thay đổi. Xem `HUONG_DAN_CAI_DAT_CLAUDE_PROJECT.md` để biết cấu hình chi tiết, cách hiểu `Research`, `High/Max`, `Thinking`, `Auto`, Memory và quy trình benchmark.
