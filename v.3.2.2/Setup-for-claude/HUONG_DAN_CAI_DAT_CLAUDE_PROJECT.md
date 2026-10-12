@@ -68,11 +68,81 @@ Không cần ghép thêm `HUONG_DAN_DU_AN_CHATGPT...` vào Claude Project.
 Với câu hỏi lịch sử, văn bản học, học giới, niên đại, tác quyền hoặc câu hỏi cần nguồn ngoài Project:
 
 - bật **Research** nếu tài khoản có;
-- bảo đảm **Web search** khả dụng;
+- bảo đảm **Web search** khả dụng; Research cần Web search để hoạt động;
 - không coi kết quả search, snippet, abstract hay metadata là đã đọc toàn văn;
 - ưu tiên các hạ tầng chuyên ngành theo `04_BAN_DO_NGUON_PHAT_HOC.md`, nhưng không biến Source Map thành whitelist.
 
+Research là chế độ nghiên cứu nhiều lượt: Claude có thể tự thực hiện các lượt tìm kiếm nối tiếp, mở các hướng khác nhau và quyết định cần điều tra gì tiếp theo. Đây là chế độ nên dùng cho các câu hỏi nghiên cứu mở của Project này.
+
 Người dùng vẫn chỉ cần hỏi tự nhiên; không cần lặp “hãy research sâu” trong từng prompt nếu Project hoạt động đúng.
+
+## 4.1. CẤU HÌNH KHUYẾN NGHỊ ĐỂ NGHIÊN CỨU MẠNH NHẤT
+
+Tên model và giao diện Claude có thể thay đổi. Vì vậy ưu tiên nguyên tắc **model mạnh nhất phù hợp → effort đủ cao → Research + Web search cho câu hỏi mở**, thay vì khóa vĩnh viễn vào một tên model.
+
+Tại thời điểm cập nhật **10/2026**, cấu hình khuyến nghị cho Project này là:
+
+```text
+Model:             Claude Opus 5.5 nếu tài khoản có
+                   Fable 5.1 là lựa chọn top-tier khác; nếu có cả hai,
+                   nên benchmark cùng prompt trước khi đổi model mặc định
+Effort:            Max cho bài khó/benchmark quan trọng
+                   High cho sử dụng nghiên cứu hằng ngày
+Research:          ON cho câu hỏi nghiên cứu mở
+Web search:        ON / khả dụng — bắt buộc để Research hoạt động
+Thinking:          luôn hoạt động trên Opus 5.5 và Fable 5.1;
+                   không cần tìm thêm một nút bật Thinking
+Permission mode:   Auto có thể dùng cho tác vụ đọc/tìm kiếm để giảm ngắt quãng;
+                   Manual khi có công cụ có thể ghi/xóa hoặc hành động có hậu quả
+Memory:            theo cấu hình ở mục 5
+```
+
+### Model
+
+Nếu giao diện đang có **Claude Opus 5.5**, đây là lựa chọn rất mạnh và phù hợp làm model mặc định cho Project nghiên cứu này. Nếu tài khoản đồng thời có **Fable 5.1**, coi đó là một lựa chọn cao cấp khác; không tự động kết luận model nào tốt hơn cho Phật học mà nên chạy cùng bộ benchmark trước khi thay model mặc định.
+
+Khi benchmark, không đổi model giữa các bài rồi quy chênh lệch cho skill.
+
+### Effort: High hay Max?
+
+- **Max**: dùng khi cần chất lượng tối đa — tác quyền, niên đại, phân tầng văn bản, so sánh triết học khó, tranh luận học giới, hoặc benchmark quan trọng. Max là mức kỹ nhất nhưng chậm hơn và tiêu tốn usage/token nhiều hơn.
+- **High**: mặc định tốt cho nghiên cứu hằng ngày; cân bằng chất lượng, tốc độ và giới hạn sử dụng.
+- Không hạ xuống Low/Medium trong một phép benchmark nếu mục tiêu là đo năng lực tối đa của hệ.
+
+### Thinking
+
+Với **Opus 5.5** và **Fable 5.1**, Thinking luôn hoạt động ở mọi mức effort trong Claude hiện tại. Không cần tìm thêm một công tắc Thinking để “bật cho mạnh hơn”.
+
+### `Auto` trong giao diện mới
+
+Nếu giao diện hiển thị `Auto` cạnh model/effort, cần hiểu đúng: đây là **chế độ quyền hành động**, không phải mức thông minh hay độ sâu suy luận.
+
+- Với Project này chủ yếu đọc nguồn, tìm web và nghiên cứu, có thể để **Auto** để Claude ít bị ngắt vì các bước xin phép.
+- `Auto` **không làm model thông minh hơn** và không thay thế `High/Max` hay `Research`.
+- Nếu đã nối các công cụ có khả năng gửi, ghi, sửa hoặc xóa dữ liệu bên ngoài, nên cân nhắc **Manual** để tự duyệt hành động.
+
+### Hai cấu hình thực tế nên dùng
+
+**Nghiên cứu tối đa / benchmark khó:**
+
+```text
+Opus 5.5 (hoặc model top-tier đã benchmark tốt hơn)
++ Max
++ Research ON
++ Web search khả dụng
++ Auto nếu chỉ đọc/tìm kiếm và muốn giảm ngắt quãng
+```
+
+**Nghiên cứu hằng ngày:**
+
+```text
+Opus 5.5 (hoặc model top-tier đã chọn)
++ High
++ Research ON khi câu hỏi cần nghiên cứu mở
++ Web search khả dụng
+```
+
+Không cần bật Research cho tác vụ thuần dịch, phiên âm, chính tả, nhận diện locator hoặc câu hỏi đơn điểm không cần nghiên cứu mở.
 
 ---
 
@@ -117,8 +187,9 @@ Trong sử dụng hằng ngày, giữ Project memory riêng của Project hoạt
 
 Khi so với ChatGPT:
 
-- dùng model Claude mạnh nhất mà tài khoản cho phép;
-- giữ nguyên model và mức suy luận trong cả loạt test;
+- dùng model Claude mạnh nhất mà tài khoản cho phép và đã chọn trước khi bắt đầu loạt test;
+- với phép thử năng lực tối đa, ưu tiên **Max**; nếu so ở chế độ sử dụng thường ngày, dùng **High**;
+- giữ nguyên model, effort, trạng thái Research và các điều kiện công cụ cho toàn bộ một loạt test;
 - dùng cùng prompt;
 - mở chat mới cho mỗi test độc lập;
 - không sửa prompt sau một lỗi đơn lẻ.
@@ -183,6 +254,7 @@ Không:
 - coi một aggregator là nhiều nhánh chứng cứ;
 - dùng bibliography làm mục tiêu dẫn dắt nghiên cứu;
 - bật `Use account memory` chỉ để mong Claude nhớ nhiều hơn;
+- coi `Auto` là mức suy luận cao hơn `High/Max`;
 - sửa lõi `01`–`05` chỉ vì một khác biệt giao diện hoặc một lỗi đơn lẻ.
 
 ---
@@ -208,8 +280,11 @@ CLAUDE PROJECT
 │   └── Use account memory: OFF
 │
 └── Khi nghiên cứu
-    ├── Research / Web search khi cần
-    ├── model mạnh và ổn định
+    ├── Model: Opus 5.5 hoặc model top-tier đã benchmark tốt hơn
+    ├── Effort: Max cho bài khó/benchmark; High cho hằng ngày
+    ├── Research: ON khi nghiên cứu mở
+    ├── Web search: khả dụng
+    ├── Auto: tùy quyền hành động; không phải mức suy luận
     └── chat mới cho benchmark độc lập
 ```
 
